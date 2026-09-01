@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dr. Martin Mang'eni Nanje | Environmental &amp; Biosystems Engineer</title>
+<meta name="description" content="Dr. Martin Mang'eni Nanje — Environmental &amp; Biosystems Engineer, PhD, University of Nairobi. Agricultural mechanization, smart irrigation, renewable energy and climate-resilient infrastructure." />
+<meta property="og:title" content="Dr. Martin Mang'eni Nanje | Environmental &amp; Biosystems Engineer" />
+<meta property="og:description" content="PhD Environmental &amp; Biosystems Engineer at the University of Nairobi — agricultural mechanization, smart irrigation, renewable energy and climate-resilient infrastructure." />
+<meta property="og:image" content="image.jpg" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" type="image/jpeg" href="image.jpg" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --forest:    #1b3a2c;
+    --forest-mid:#2c5a43;
+    --forest-lt: #3d7a5a;
+    --amber:     #c17a2b;
+    --amber-lt:  #e8a84a;
+    --cream:     #f5f0e6;
+    --cream-dk:  #ede6d8;
+    --charcoal:  #222220;
+    --muted:     #7a7a72;
+    --white:     #fffcf5;
+    --card-bg:   rgba(255,252,245,0.85);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 110%; scroll-behavior: smooth; }
+  body {
+    font-family: 'Outfit', sans-serif;
+    background: var(--cream);
+    color: var(--charcoal);
+    font-size: 1rem;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* SCROLL PROGRESS */
+  .scroll-progress { position: fixed; top: 0; left: 0; height: 3px; width: 0%; background: linear-gradient(90deg, var(--amber), var(--amber-lt)); z-index: 200; transition: width 0.1s ease-out; }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: linear-gradient(rgba(19, 40, 29, 0.8), rgba(19, 40, 29, 0.8)),
+      url('background.jpg') center / cover no-repeat;
+    backdrop-filter: blur(8px);
+    padding: 0.75rem 4vw;
+    display: flex; align-items: center; justify-content: space-between;
+    min-height: 4rem;
+    height: auto;
+  }
+  .nav-brand { font-family: 'DM Mono', monospace; color: var(--amber-lt); font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; }
+  nav ul { list-style: none; display: flex; gap: 1.6rem; }
+  nav ul li a { position: relative; color: var(--cream); text-decoration: none; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; opacity: 0.8; transition: opacity 0.2s, color 0.2s; }
+  nav ul li a:hover { opacity: 1; color: var(--amber-lt); }
+  nav ul li a.active { opacity: 1; color: var(--amber-lt); }
+  nav ul li a.active::after { content: ''; position: absolute; left: 0; right: 0; bottom: -8px; height: 2px; background: var(--amber-lt); border-radius: 1px; }
+  .mobile-menu a.active { color: var(--amber-lt); }
+  .nav-cv { background: var(--amber); color: var(--white) !important; padding: 6px 16px; border-radius: 2px; opacity: 1 !important; font-size: 0.7rem !important; letter-spacing: 0.1em; white-space: nowrap; display: inline-flex; align-items: center; }
+  .nav-cv:hover { background: var(--amber-lt) !important; color: var(--charcoal) !important; }
+
+  /* Hamburger */
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 6px; }
+  .hamburger span { display: block; width: 22px; height: 2px; background: var(--cream); border-radius: 2px; transition: all 0.3s; }
+  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .mobile-menu { display: none; position: fixed; top: 4rem; left: 0; right: 0; background: rgba(27,58,44,0.99); z-index: 99; padding: 1.5rem 6vw; flex-direction: column; gap: 1rem; }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a { color: var(--cream); text-decoration: none; font-size: 0.9rem; letter-spacing: 0.08em; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.08); }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(19, 40, 29, 0.75), rgba(19, 40, 29, 0.75)),
+      url('background.jpg') center / cover no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: visible;
+    position: relative;
+  }
+  .hero-bg-pattern {
+    position: absolute; inset: 0;
+    background-image:
+      radial-gradient(circle at 20% 80%, rgba(193,122,43,0.12) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(61,122,90,0.2) 0%, transparent 50%),
+      repeating-linear-gradient(0deg, transparent, transparent 60px, rgba(255,255,255,0.015) 60px, rgba(255,255,255,0.015) 61px),
+      repeating-linear-gradient(90deg, transparent, transparent 60px, rgba(255,255,255,0.015) 60px, rgba(255,255,255,0.015) 61px);
+    pointer-events: none;
+  }
+  .hero-content { padding: 140px 5vw 80px 8vw; display: flex; flex-direction: column; justify-content: center; position: relative; z-index: 2; }
+  .hero-eyebrow { font-family: 'DM Mono', monospace; color: var(--amber-lt); font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 12px; }
+  .hero-eyebrow::before { content: ''; display: inline-block; width: 36px; height: 1px; background: var(--amber-lt); }
+  .hero-name { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.8rem, 5vw, 4.5rem); font-weight: 300; color: var(--white); line-height: 1.1; margin-bottom: 0.4rem; }
+  .hero-name strong { font-weight: 700; font-style: italic; color: var(--amber-lt); }
+  .hero-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.1rem, 2vw, 1.4rem); font-weight: 300; color: rgba(245,240,230,0.75); font-style: italic; margin-bottom: 2.5rem; letter-spacing: 0.02em; }
+  .hero-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 2.5rem; }
+  .hero-tag { border: 1px solid rgba(193,122,43,0.45); color: var(--amber-lt); padding: 4px 14px; border-radius: 2px; font-size: 0.7rem; font-family: 'DM Mono', monospace; letter-spacing: 0.06em; text-transform: uppercase; transition: all 0.2s; cursor: default; }
+  .hero-tag:hover { background: rgba(193,122,43,0.16); border-color: var(--amber-lt); transform: translateY(-2px); }
+
+  /* HERO SCROLL CUE */
+  .hero-scroll-cue { position: absolute; bottom: 28px; left: 50%; transform: translateX(-50%); width: 26px; height: 42px; border: 2px solid rgba(245,240,230,0.35); border-radius: 14px; display: flex; justify-content: center; padding-top: 8px; z-index: 5; transition: border-color 0.2s; text-decoration: none; }
+  .hero-scroll-cue:hover { border-color: var(--amber-lt); }
+  .hero-scroll-cue span { display: block; width: 4px; height: 8px; background: var(--amber-lt); border-radius: 2px; animation: scrollCue 1.8s infinite; }
+  @keyframes scrollCue { 0% { opacity: 1; transform: translateY(0); } 70% { opacity: 0; transform: translateY(14px); } 100% { opacity: 0; transform: translateY(0); } }
+  @media (max-width: 900px) { .hero-scroll-cue { display: none; } }
+  .hero-contact { display: flex; flex-direction: column; gap: 8px; margin-bottom: 2.5rem; }
+  .hero-contact a { color: rgba(245,240,230,0.65); text-decoration: none; font-size: 0.82rem; font-family: 'DM Mono', monospace; transition: color 0.2s; display: flex; align-items: center; gap: 10px; }
+  .hero-contact a:hover { color: var(--amber-lt); }
+  .hero-contact .icon { font-size: 0.75rem; width: 14px; }
+  .hero-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 12px 28px; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; font-weight: 600; transition: all 0.25s; cursor: pointer; border: none; }
+  .btn-primary { background: var(--amber); color: var(--white); }
+  .btn-primary:hover { background: var(--amber-lt); color: var(--charcoal); }
+  .btn-outline { border: 1px solid rgba(245,240,230,0.4); color: var(--cream); background: transparent; }
+  .btn-outline:hover { border-color: var(--amber-lt); color: var(--amber-lt); }
+  .btn-dl { background: transparent; border: 1px solid var(--amber-lt); color: var(--amber-lt); display: inline-flex; align-items: center; gap: 8px; }
+  .btn-dl:hover { background: var(--amber-lt); color: var(--charcoal); }
+
+  /* HERO RIGHT — PHOTO */
+  .hero-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: visible;
+    padding: 2rem 1rem;
+  }
+  .hero-photo-wrap {
+    position: relative;
+    width: min(360px, 88vw);
+    padding: 14px;
+    border-radius: 28px;
+    background: linear-gradient(180deg, rgba(255,252,245,0.08), rgba(255,252,245,0.02));
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.08);
+  }
+  .hero-photo-frame {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid rgba(193,122,43,0.62);
+    margin: 0 auto;
+    background: linear-gradient(180deg, #f4efe6 0%, #e9dfcf 100%);
+    box-shadow:
+      0 24px 60px rgba(0,0,0,0.22),
+      18px 18px 0 rgba(193,122,43,0.14),
+      -8px -8px 0 rgba(61,122,90,0.18);
+  }
+  .hero-photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 18%;
+    transform: scale(1.08);
+    filter: contrast(1.08) saturate(0.9) brightness(0.98);
+  }
+  .hero-photo-frame::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(27,58,44,0.28) 0%, transparent 45%);
+    pointer-events: none;
+  }
+  .hero-degree-badge {
+    position: absolute;
+    bottom: -1rem;
+    right: -1rem;
+    background: var(--amber);
+    color: var(--white);
+    width: 104px; height: 104px;
+    border-radius: 50%;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    text-align: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.55rem;
+    letter-spacing: 0.02em;
+    line-height: 1.3;
+    font-weight: 500;
+    border: 4px solid var(--forest);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+    z-index: 10;
+  }
+  .hero-degree-badge strong { font-size: 1.2rem; display: block; font-family: 'Cormorant Garamond', serif; font-weight: 700; margin-bottom: 2px; }
+  .hero-stat-pill {
+    position: absolute;
+    background: rgba(27,58,44,0.92);
+    border: 1px solid rgba(193,122,43,0.4);
+    backdrop-filter: blur(6px);
+    padding: 10px 16px;
+    border-radius: 40px;
+    display: flex; align-items: center; gap: 10px;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.16);
+    z-index: 10;
+  }
+  .hp-left { top: auto; bottom: 2rem; left: -2rem; animation: float1 6s ease-in-out infinite; }
+  .hp-right { top: 2rem; bottom: auto; right: -2rem; animation: float2 7s ease-in-out infinite; }
+  .stat-pill-num { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 700; color: var(--amber-lt); line-height: 1; }
+  .stat-pill-label { font-family: 'DM Mono', monospace; font-size: 0.6rem; color: rgba(245,240,230,0.7); letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.3; }
+
+  @keyframes float1 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+  @keyframes float2 { 0%,100%{transform:translateY(0)} 50%{transform:translateY(8px)} }
+
+  /* SECTIONS */
+  body { counter-reset: section; }
+  section { padding: 90px 8vw; }
+  section:not(.hero) { counter-increment: section; }
+  .section-label { font-family: 'DM Mono', monospace; color: var(--amber); font-size: 0.73rem; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 0.8rem; display: flex; align-items: center; gap: 10px; }
+  .section-label::before { content: counter(section, decimal-leading-zero) " ·"; opacity: 0.55; }
+  .section-label::after { content: ''; display: inline-block; height: 1px; width: 40px; background: var(--amber); }
+  .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 600; color: var(--forest); line-height: 1.15; margin-bottom: 1rem; }
+  .section-title em { font-style: italic; color: var(--amber); }
+  .section-subtitle { color: var(--muted); max-width: 640px; margin-bottom: 3rem; font-size: 0.95rem; }
+  .divider { width: 60px; height: 1px; background: var(--amber); margin: 1.5rem 0 2.5rem; }
+
+  /* ABOUT */
+  .about-section {
+    background: linear-gradient(rgba(222,236,226,0.84), rgba(222,236,226,0.84)),
+      url('background1.jpg') center / cover no-repeat;
+  }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5vw; align-items: start; }
+  .about-text p { margin-bottom: 1rem; color: #3a3a38; font-size: 0.96rem; }
+  .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .stat-card { background: var(--forest); color: var(--cream); padding: 24px 20px; border-radius: 4px; position: relative; overflow: hidden; }
+  .stat-card::before { content: ''; position: absolute; bottom: 0; right: 0; width: 60px; height: 60px; background: rgba(193,122,43,0.15); border-radius: 50% 0 0 0; }
+  .stat-card .num { font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; font-weight: 700; color: var(--amber-lt); line-height: 1; margin-bottom: 6px; }
+  .stat-card .desc { font-size: 0.75rem; opacity: 0.75; font-family: 'DM Mono', monospace; letter-spacing: 0.04em; line-height: 1.4; }
+
+  /* EXPERTISE */
+  .expertise-section {
+    background: linear-gradient(rgba(19, 40, 29, 0.85), rgba(19, 40, 29, 0.85)),
+      url('background4.jpg') center / cover no-repeat;
+  }
+  .expertise-section .section-title { color: var(--cream); }
+  .expertise-section .section-label { color: var(--amber-lt); }
+  .expertise-section .section-label::after { background: var(--amber-lt); }
+  .expertise-section .section-subtitle { color: rgba(245,240,230,0.7); }
+  .expertise-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.5rem; }
+  .expertise-card { background: rgba(44,90,67,0.62); border: 1px solid rgba(193,122,43,0.28); padding: 28px 24px; border-radius: 4px; transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s, background 0.25s; position: relative; overflow: hidden; }
+  .expertise-card::before { content: ''; position: absolute; top: 0; left: 0; height: 3px; width: 0; background: var(--amber); transition: width 0.3s; }
+  .expertise-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.2); border-color: rgba(193,122,43,0.5); background: rgba(44,90,67,0.85); }
+  .expertise-card:hover::before { width: 100%; }
+  .exp-icon { font-size: 1.5rem; width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; border-radius: 50%; background: rgba(193,122,43,0.12); border: 1px solid rgba(193,122,43,0.3); margin-bottom: 16px; transition: all 0.25s; }
+  .expertise-card:hover .exp-icon { background: var(--amber); border-color: var(--amber); transform: scale(1.06); }
+  .exp-title { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 600; color: var(--cream); margin-bottom: 8px; }
+  .exp-desc { font-size: 0.82rem; color: rgba(245,240,230,0.7); line-height: 1.6; }
+
+  /* EXPERIENCE TIMELINE */
+  .experience-section {
+    background: linear-gradient(rgba(224,238,228,0.86), rgba(224,238,228,0.86)),
+      url('background2.jpg') center / cover no-repeat;
+  }
+  .timeline { position: relative; padding-left: 30px; }
+  .timeline::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: linear-gradient(to bottom, var(--amber), var(--forest-lt), var(--amber)); }
+  .timeline-item { position: relative; margin-bottom: 3rem; padding-left: 24px; }
+  .timeline-dot { position: absolute; left: -36px; top: 6px; width: 12px; height: 12px; background: var(--amber); border-radius: 50%; border: 2px solid var(--white); box-shadow: 0 0 0 3px rgba(193,122,43,0.25); }
+  .timeline-period { font-family: 'DM Mono', monospace; font-size: 0.73rem; color: var(--amber); letter-spacing: 0.08em; margin-bottom: 4px; }
+  .timeline-role { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 600; color: var(--forest); margin-bottom: 2px; }
+  .timeline-org { font-size: 0.82rem; color: var(--muted); font-style: italic; margin-bottom: 10px; }
+  .timeline-desc { font-size: 0.87rem; color: #4a4a46; line-height: 1.65; }
+  .timeline-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 4rem; }
+
+  /* EDUCATION */
+  .education-section {
+    background: linear-gradient(rgba(218,234,222,0.85), rgba(218,234,222,0.85)),
+      url('background1.jpg') center / cover no-repeat;
+  }
+  .edu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; }
+  .edu-card { background: var(--card-bg); border: 1px solid rgba(27,58,44,0.12); padding: 24px 22px; border-radius: 4px; transition: all 0.25s; border-top: 3px solid var(--amber); }
+  .edu-card:hover { box-shadow: 0 8px 30px rgba(27,58,44,0.1); transform: translateY(-3px); }
+  .edu-degree { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 700; color: var(--forest); margin-bottom: 4px; }
+  .edu-field { font-size: 0.82rem; color: var(--muted); font-style: italic; margin-bottom: 8px; }
+  .edu-inst { font-size: 0.85rem; color: var(--charcoal); font-weight: 500; }
+  .edu-year { font-family: 'DM Mono', monospace; font-size: 0.73rem; color: var(--amber); letter-spacing: 0.08em; margin-top: 8px; }
+
+  /* RESEARCH */
+  .research-section {
+    background: linear-gradient(rgba(19, 40, 29, 0.85), rgba(19, 40, 29, 0.85)),
+      url('background3.jpg') center / cover no-repeat;
+  }
+  .research-section .section-title { color: var(--cream); }
+  .research-section .section-label { color: var(--amber-lt); }
+  .research-section .section-label::after { background: var(--amber-lt); }
+  .research-section .section-subtitle { color: rgba(245,240,230,0.6); }
+  .research-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
+  .research-card { background: rgba(44,90,67,0.6); border: 1px solid rgba(193,122,43,0.2); padding: 28px 24px; border-radius: 4px; transition: background 0.25s, border-color 0.25s; }
+  .research-card:hover { background: rgba(44,90,67,0.9); border-color: rgba(193,122,43,0.5); }
+  .rc-tag { font-family: 'DM Mono', monospace; font-size: 0.62rem; color: var(--amber-lt); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px; display: block; }
+  .rc-title { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 600; color: var(--cream); margin-bottom: 10px; line-height: 1.3; }
+  .rc-desc { font-size: 0.82rem; color: rgba(245,240,230,0.65); line-height: 1.6; }
+  .rc-budget { margin-top: 14px; padding-top: 14px; border-top: 1px solid rgba(193,122,43,0.2); font-family: 'DM Mono', monospace; font-size: 0.7rem; color: var(--amber-lt); }
+
+  /* PUBLICATIONS */
+  .publications-section {
+    background: linear-gradient(rgba(216,232,220,0.84), rgba(216,232,220,0.84)),
+      url('background4.jpg') center / cover no-repeat;
+  }
+  .pub-list { display: flex; flex-direction: column; gap: 1.2rem; }
+  .pub-item { background: var(--card-bg); border-left: 3px solid var(--amber); padding: 18px 22px; border-radius: 0 4px 4px 0; transition: border-color 0.2s, box-shadow 0.2s; }
+  .pub-item:hover { border-color: var(--forest-lt); box-shadow: 4px 0 20px rgba(27,58,44,0.08); }
+  .pub-type { font-family: 'DM Mono', monospace; font-size: 0.62rem; color: var(--amber); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 4px; }
+  .pub-title { font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; font-weight: 600; color: var(--forest); margin-bottom: 4px; line-height: 1.35; }
+  .pub-meta { font-size: 0.78rem; color: var(--muted); font-style: italic; }
+  .pub-meta a { color: var(--amber); text-decoration: none; }
+  .pub-meta a:hover { text-decoration: underline; }
+  .pub-tabs { display: flex; gap: 1rem; margin-bottom: 2.5rem; flex-wrap: wrap; }
+  .pub-tab { font-family: 'DM Mono', monospace; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 16px; border: 1px solid rgba(27,58,44,0.2); border-radius: 2px; cursor: pointer; background: transparent; color: var(--forest); transition: all 0.2s; }
+  .pub-tab.active, .pub-tab:hover { background: var(--forest); color: var(--cream); border-color: var(--forest); }
+
+  /* AWARDS */
+  .awards-section {
+    background: linear-gradient(rgba(224,238,228,0.86), rgba(224,238,228,0.86)),
+      url('background2.jpg') center / cover no-repeat;
+  }
+  .awards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; }
+  .award-card { border: 1px solid rgba(27,58,44,0.12); padding: 24px 20px; border-radius: 4px; transition: all 0.25s; }
+  .award-card:hover { border-color: var(--amber); box-shadow: 0 8px 30px rgba(193,122,43,0.1); }
+  .award-year { font-family: 'DM Mono', monospace; font-size: 0.65rem; color: var(--amber); letter-spacing: 0.1em; margin-bottom: 8px; }
+  .award-title { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; color: var(--forest); margin-bottom: 6px; line-height: 1.3; }
+  .award-org { font-size: 0.78rem; color: var(--muted); }
+
+  /* MEMBERSHIPS */
+  .memberships-section {
+    background: linear-gradient(rgba(218,234,222,0.85), rgba(218,234,222,0.85)),
+      url('background1.jpg') center / cover no-repeat;
+  }
+  .membership-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; }
+  .membership-item { display: flex; flex-direction: column; background: var(--card-bg); padding: 22px 20px; border-radius: 4px; border: 1px solid rgba(27,58,44,0.12); transition: all 0.25s; }
+  .membership-item:hover { border-color: var(--amber); box-shadow: 0 8px 30px rgba(193,122,43,0.1); }
+  .membership-icon { color: var(--amber); font-size: 0.7rem; margin-bottom: 10px; }
+  .membership-org { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; color: var(--forest); margin-bottom: 8px; line-height: 1.3; }
+  .membership-meta { font-size: 0.78rem; color: var(--muted); line-height: 1.6; flex-grow: 1; }
+  .membership-links { margin-top: 14px; padding-top: 14px; border-top: 1px solid rgba(27,58,44,0.08); display: flex; flex-wrap: wrap; gap: 8px; }
+
+  /* CONTACT */
+  .contact-section {
+    background: linear-gradient(rgba(245,240,230,0.86), rgba(245,240,230,0.86)),
+      url('background3.jpg') center / cover no-repeat;
+  }
+  .contact-section .section-title { color: var(--forest); }
+  .contact-section .section-label { color: var(--amber); }
+  .contact-section .section-label::after { background: var(--amber); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5vw; align-items: start; margin-top: 2.5rem; }
+  .contact-intro { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 300; color: rgba(34,34,32,0.78); font-style: italic; line-height: 1.5; margin-bottom: 2rem; }
+  .contact-details { display: flex; flex-direction: column; gap: 14px; }
+  .contact-row { display: flex; align-items: flex-start; gap: 14px; }
+  .c-icon { width: 36px; height: 36px; background: rgba(193,122,43,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; flex-shrink: 0; margin-top: 2px; }
+  .c-info { flex: 1; }
+  .c-label { font-family: 'DM Mono', monospace; font-size: 0.65rem; color: var(--amber); letter-spacing: 0.1em; text-transform: uppercase; display: block; margin-bottom: 2px; }
+  .c-value { color: var(--charcoal); font-size: 0.9rem; }
+  .c-value a { color: var(--charcoal); text-decoration: none; }
+  .c-value a:hover { color: var(--amber); }
+  .contact-card { background: var(--card-bg); border: 1px solid rgba(27,58,44,0.12); border-radius: 4px; padding: 32px; }
+  .contact-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--forest); margin-bottom: 1rem; }
+  .contact-card p { color: rgba(34,34,32,0.7); font-size: 0.85rem; margin-bottom: 0.5rem; }
+  .references-list { margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid rgba(193,122,43,0.2); display: flex; flex-direction: column; gap: 14px; }
+  .ref-item { }
+  .ref-name { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 600; color: var(--forest); }
+  .ref-title { font-size: 0.78rem; color: rgba(34,34,32,0.62); margin: 2px 0; }
+  .ref-contact { font-family: 'DM Mono', monospace; font-size: 0.68rem; color: var(--amber); }
+
+  /* DOWNLOAD CTA STRIP */
+  .cv-strip { background: var(--amber); padding: 28px 8vw; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+  .cv-strip p { color: var(--white); font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-style: italic; }
+  .btn-dl-strip { background: var(--white); color: var(--amber); padding: 12px 28px; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; font-weight: 700; border-radius: 2px; transition: all 0.2s; display: flex; align-items: center; gap: 8px; }
+  .btn-dl-strip:hover { background: var(--forest); color: var(--amber-lt); }
+
+  /* BACK TO TOP */
+  .back-to-top { position: fixed; bottom: 30px; right: 30px; width: 44px; height: 44px; background: var(--amber); color: var(--white); border: none; border-radius: 50%; cursor: pointer; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; z-index: 99; opacity: 0; pointer-events: none; transition: opacity 0.3s, transform 0.3s; box-shadow: 0 4px 16px rgba(193,122,43,0.4); transform: translateY(10px); }
+  .back-to-top.visible { opacity: 1; pointer-events: all; transform: translateY(0); }
+  .back-to-top:hover { background: var(--forest); }
+
+  /* FOOTER */
+  footer { background: var(--charcoal); padding: 56px 8vw 24px; }
+  .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2.5rem; padding-bottom: 28px; border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 20px; }
+  .footer-brand { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 700; color: var(--cream); margin-bottom: 10px; }
+  .footer-brand em { font-style: italic; color: var(--amber-lt); }
+  .footer-tagline { font-size: 0.8rem; color: rgba(255,255,255,0.4); line-height: 1.6; max-width: 320px; }
+  .footer-col h4 { font-family: 'DM Mono', monospace; font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--amber-lt); margin-bottom: 14px; }
+  .footer-col { display: flex; flex-direction: column; gap: 9px; }
+  .footer-col a { font-size: 0.82rem; color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s; }
+  .footer-col a:hover { color: var(--amber-lt); }
+  .footer-bottom { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  .footer-bottom p { font-size: 0.72rem; color: rgba(255,255,255,0.3); font-family: 'DM Mono', monospace; }
+  .footer-bottom a { font-size: 0.72rem; color: rgba(255,255,255,0.35); text-decoration: none; font-family: 'DM Mono', monospace; letter-spacing: 0.06em; transition: color 0.2s; }
+  .footer-bottom a:hover { color: var(--amber-lt); }
+  @media (max-width: 700px) { .footer-grid { grid-template-columns: 1fr; gap: 1.8rem; } .footer-bottom { justify-content: center; text-align: center; } }
+
+  /* ANIMATIONS */
+  .fade-up { opacity: 0; transform: translateY(24px); transition: opacity 0.65s ease, transform 0.65s ease; }
+  .fade-up.visible { opacity: 1; transform: translateY(0); }
+  .stagger-1 { transition-delay: 0.05s; }
+  .stagger-2 { transition-delay: 0.12s; }
+  .stagger-3 { transition-delay: 0.19s; }
+  .stagger-4 { transition-delay: 0.26s; }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    nav ul { display: none; }
+    .hamburger { display: flex; }
+    .hero { grid-template-columns: 1fr; }
+    .hero-visual { display: flex; padding-top: 0; }
+    .about-grid, .contact-grid, .timeline-grid { grid-template-columns: 1fr; }
+    section { padding: 60px 6vw; }
+    .hero-content { padding: 120px 6vw 60px; }
+    .hero-photo-wrap { width: min(360px, 86vw); }
+    .hp-left { left: -20px; }
+    .hp-right { right: -20px; }
+  }
+  @media (max-width: 600px) {
+    .about-stats { grid-template-columns: 1fr; }
+    .cv-strip { flex-direction: column; text-align: center; }
+  }
+  @media (max-width: 480px) {
+    html { font-size: 95%; }
+    section { padding: 50px 5vw; }
+    .expertise-grid, .awards-grid, .membership-list, .profdev-grid, .edu-grid, .research-cards { grid-template-columns: 1fr; }
+    .conf-item { grid-template-columns: 1fr; gap: 12px; padding: 14px 16px; }
+    .conf-badge { width: 36px; height: 36px; font-size: 1rem; align-self: flex-start; margin-top: 2px; }
+    .conf-content { display: flex; flex-direction: column; gap: 8px; }
+    .conf-type { font-size: 0.55rem; }
+    .conf-title { font-size: 0.95rem; }
+    .conf-meta { font-size: 0.75rem; }
+    .hero-degree-badge { width: 84px; height: 84px; font-size: 0.48rem; bottom: -0.5rem; right: -0.5rem; }
+    .hero-stat-pill { padding: 8px 12px; }
+    .hp-left { left: -10px; }
+    .hp-right { right: -10px; }
+    .nav-brand { font-size: 0.7rem; }
+    .pub-tabs { gap: 0.5rem; }
+    .pub-tab { padding: 5px 12px; font-size: 0.65rem; }
+  }
+
+  /* CONFERENCES & INTERNATIONAL ENGAGEMENTS */
+  .conferences-section {
+    background: linear-gradient(rgba(19, 40, 29, 0.85), rgba(19, 40, 29, 0.85)),
+      url('background2.jpg') center / cover no-repeat;
+  }
+  .conferences-section .section-title { color: var(--cream); }
+  .conferences-section .section-label { color: var(--amber-lt); }
+  .conferences-section .section-label::after { background: var(--amber-lt); }
+  .conferences-section .section-subtitle { color: rgba(245,240,230,0.7); }
+  .conf-grid { display: flex; flex-direction: column; gap: 0; }
+  .conf-year-group { margin-bottom: 2.5rem; }
+  .conf-year-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--white);
+    background: var(--forest);
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+  }
+  .conf-items { display: flex; flex-direction: column; gap: 1rem; }
+  .conf-item {
+    border: 1px solid rgba(193,122,43,0.25);
+    border-radius: 6px;
+    padding: 20px 24px;
+    background: rgba(44,90,67,0.62);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: start;
+    transition: all 0.25s;
+    position: relative;
+    overflow: hidden;
+  }
+  .conf-item::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 3px;
+    background: var(--amber);
+    transform: scaleY(0);
+    transition: transform 0.3s;
+    transform-origin: bottom;
+  }
+  .conf-item:hover { box-shadow: 0 10px 36px rgba(0,0,0,0.25); border-color: rgba(193,122,43,0.5); background: rgba(44,90,67,0.85); }
+  .conf-item:hover::before { transform: scaleY(1); }
+  .conf-badge {
+    width: 44px; height: 44px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+  .conf-content { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+  .conf-type {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.62rem;
+    color: var(--amber-lt);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .conf-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--cream);
+    margin-bottom: 4px;
+    line-height: 1.35;
+  }
+  .conf-meta { font-size: 0.8rem; color: rgba(245,240,230,0.7); line-height: 1.55; }
+  .conf-meta strong { color: var(--cream); }
+  .conf-cert-tag {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px 8px;
+    max-width: 100%;
+    margin-top: 8px;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem;
+    color: var(--amber-lt);
+    background: rgba(255,255,255,0.08);
+    padding: 3px 10px;
+    border-radius: 40px;
+    letter-spacing: 0.06em;
+  }
+
+  /* PROFESSIONAL DEVELOPMENT */
+  .profdev-section {
+    background: linear-gradient(rgba(19, 40, 29, 0.85), rgba(19, 40, 29, 0.85)),
+      url('background4.jpg') center / cover no-repeat;
+  }
+  .profdev-section .section-title { color: var(--cream); }
+  .profdev-section .section-label { color: var(--amber-lt); }
+  .profdev-section .section-label::after { background: var(--amber-lt); }
+  .profdev-section .section-subtitle { color: rgba(245,240,230,0.7); }
+  .profdev-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.4rem; }
+  .profdev-card {
+    background: rgba(44,90,67,0.62);
+    border: 1px solid rgba(193,122,43,0.25);
+    border-radius: 6px;
+    padding: 22px 22px;
+    transition: all 0.25s;
+    position: relative;
+    overflow: hidden;
+  }
+  .profdev-card:hover { transform: translateY(-3px); box-shadow: 0 10px 32px rgba(0,0,0,0.25); border-color: rgba(193,122,43,0.5); background: rgba(44,90,67,0.85); }
+  .profdev-card-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 10px; }
+  .profdev-icon { font-size: 1.5rem; }
+  .profdev-year-badge {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem;
+    color: var(--amber-lt);
+    border: 1px solid rgba(232,168,74,0.45);
+    padding: 2px 8px;
+    border-radius: 2px;
+    letter-spacing: 0.06em;
+  }
+  .profdev-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--cream);
+    margin-bottom: 4px;
+    line-height: 1.3;
+  }
+  .profdev-issuer { font-size: 0.78rem; color: rgba(245,240,230,0.7); margin-bottom: 6px; }
+  .profdev-desc { font-size: 0.78rem; color: rgba(245,240,230,0.65); line-height: 1.55; }
+  .profdev-cert {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.58rem;
+    color: var(--amber-lt);
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 8px 12px;
+    border-radius: 12px;
+  }
+
+  /* EXPANDED AWARDS */
+  .awards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.4rem; }
+  .award-card { border: 1px solid rgba(27,58,44,0.12); padding: 22px 20px; border-radius: 6px; transition: all 0.25s; position: relative; overflow: hidden; }
+  .award-card::after { content: ''; position: absolute; top: 0; right: 0; width: 0; height: 0; border-style: solid; border-width: 0 32px 32px 0; border-color: transparent rgba(193,122,43,0.15) transparent transparent; }
+  .award-card:hover { border-color: var(--amber); box-shadow: 0 8px 30px rgba(193,122,43,0.1); transform: translateY(-2px); }
+  .award-year { font-family: 'DM Mono', monospace; font-size: 0.65rem; color: var(--amber); letter-spacing: 0.1em; margin-bottom: 8px; }
+  .award-title { font-family: 'Cormorant Garamond', serif; font-size: 1.08rem; font-weight: 600; color: var(--forest); margin-bottom: 6px; line-height: 1.3; }
+  .award-org { font-size: 0.78rem; color: var(--muted); }
+  .award-links { margin-top: 14px; padding-top: 14px; border-top: 1px solid rgba(27,58,44,0.08); display: flex; flex-wrap: wrap; gap: 8px; }
+
+  /* CV DOWNLOAD STRIP */
+  .cv-strip {
+    background: var(--amber);
+    padding: 28px 8vw;
+    display: flex; align-items: center; justify-content: space-between;
+    flex-wrap: wrap; gap: 1rem;
+  }
+  .cv-strip p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    color: var(--white);
+    font-style: italic;
+  }
+  .cv-strip-btn {
+    background: var(--forest);
+    color: var(--white);
+    padding: 12px 28px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background 0.2s;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .cv-strip-btn:hover { background: var(--charcoal); }
+
+  .cert-verify-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--forest-mid, #2c5a43);
+    font-family: 'DM Mono', monospace;
+    font-size: 0.58rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    border: 1px solid rgba(27,58,44,0.22);
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.65);
+    transition: all 0.2s;
+    vertical-align: middle;
+    margin-left: 2px;
+    text-transform: uppercase;
+  }
+  .cert-verify-link::before { content: "📄"; font-size: 0.85em; line-height: 1; }
+  .verified-tag { display: inline-flex; align-items: center; gap: 4px; font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--forest-mid); opacity: 0.6; margin-right: 4px; }
+  .cert-verify-link:hover {
+    background: var(--forest, #1b3a2c);
+    color: var(--amber-lt, #e8a84a);
+    border-color: var(--forest, #1b3a2c);
+    transform: translateY(-1px);
+  }
+  .conferences-section .cert-verify-link,
+  .profdev-section .cert-verify-link {
+    color: var(--amber-lt);
+    border-color: rgba(232,168,74,0.55);
+    background: rgba(255,255,255,0.06);
+    margin-left: 0;
+    white-space: nowrap;
+  }
+  .conferences-section .cert-verify-link:hover,
+  .profdev-section .cert-verify-link:hover {
+    background: var(--amber-lt);
+    color: var(--forest);
+    border-color: var(--amber-lt);
+  }
+  .contact-section .cert-verify-link { color: var(--amber-lt); border-color: rgba(232,168,74,0.4); }
+  .contact-section .cert-verify-link:hover { background: var(--amber-lt); color: var(--forest); }
+</style>
+</head>
+<body>
+
+<!-- SCROLL PROGRESS -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- NAV -->
+<nav>
+  <span class="nav-brand">Dr. M.M. Nanje</span>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#expertise">Expertise</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#research">Research</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#awards">Awards</a></li>
+    <li><a href="#memberships">Memberships</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#expertise" onclick="closeMenu()">Expertise</a>
+  <a href="#experience" onclick="closeMenu()">Experience</a>
+  <a href="#research" onclick="closeMenu()">Research</a>
+  <a href="#publications" onclick="closeMenu()">Publications</a>
+  <a href="#awards" onclick="closeMenu()">Awards</a>
+  <a href="#memberships" onclick="closeMenu()">Memberships</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+  <a href="https://drive.google.com/file/d/1fMK-XXw_GG9yleABtl_FIuHSyMZI4q3i/view" target="_blank" onclick="closeMenu()" style="color:var(--amber-lt);">⬇ View CV</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Environmental &amp; Biosystems Engineer</p>
+    <h1 class="hero-name">Dr. Martin<br><strong>Mang'eni Nanje</strong></h1>
+    <p class="hero-title">PhD · University of Nairobi · Kenya</p>
+    <div class="hero-tags">
+      <span class="hero-tag">Agricultural Mechanization</span>
+      <span class="hero-tag">Smart Irrigation</span>
+      <span class="hero-tag">Renewable Energy</span>
+      <span class="hero-tag">ESIA Lead Expert</span>
+      <span class="hero-tag">Climate Resilience</span>
+      <span class="hero-tag">Water–Energy–Food Nexus</span>
+    </div>
+    <div class="hero-cta">
+      <a href="#about" class="btn btn-primary">Explore Profile</a>
+      <a href="https://drive.google.com/file/d/1fMK-XXw_GG9yleABtl_FIuHSyMZI4q3i/view" target="_blank" class="btn btn-dl">⬇ View CV</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-photo-wrap">
+      <div class="hero-stat-pill hp-left">
+        <div>
+          <div class="stat-pill-num">12+</div>
+          <div class="stat-pill-label">Years<br>Experience</div>
+        </div>
+      </div>
+      <div class="hero-photo-frame">
+        <img src="image.jpg" alt="Dr. Martin Mang'eni Nanje" />
+      </div>
+      <div class="hero-degree-badge">
+        <strong>PhD</strong>
+        ENV. &amp;<br>BIOSYSTEMS<br>ENGINEERING
+      </div>
+      <div class="hero-stat-pill hp-right">
+        <div>
+          <div class="stat-pill-num">7+</div>
+          <div class="stat-pill-label">Peer-Reviewed<br>Publications</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a href="#about" class="hero-scroll-cue" aria-label="Scroll down"><span></span></a>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about-section">
+  <div class="section-label">Background</div>
+  <h2 class="section-title">Engineering for a<br><em>Sustainable Africa</em></h2>
+  <div class="divider"></div>
+  <div class="about-grid fade-up">
+    <div class="about-text">
+      <p>I am an Environmental and Biosystems Engineer with over twelve years of progressive responsibility spanning academia, research, consultancy and professional engineering across government, industry and development projects in Kenya and Sub-Saharan Africa.</p>
+      <p>My expertise spans agricultural mechanization, irrigation and drainage engineering, renewable energy systems, environmental sustainability, biomedical informatics and climate-resilient infrastructure development, with a focus on the <strong>water–energy–food nexus</strong>.</p>
+      <p>I have completed my doctoral studies at the University of Nairobi with a thesis on modelling and performance optimization of a mechanized potato harvester for small and medium-scale farms in Kenya, integrating soil–tool interaction modelling, finite element analysis and multi-criteria decision modelling.</p>
+      <p>As a NEMA-registered Lead Expert, I have undertaken extensive consultancy on major infrastructure including the Umba Irrigation Project, Galana–Kulalu Food Security Project and several small hydropower and wind power projects. I am also the founder of <strong>Sisili Agritech Ltd</strong> — a climate-focused agritech enterprise for smallholder systems in East Africa.</p>
+    </div>
+    <div class="about-stats">
+      <div class="stat-card"><div class="num">12+</div><div class="desc">Years of professional experience</div></div>
+      <div class="stat-card"><div class="num">7+</div><div class="desc">Peer-reviewed publications</div></div>
+      <div class="stat-card"><div class="num">5+</div><div class="desc">Major ESIA consultancy assignments</div></div>
+      <div class="stat-card"><div class="num">50+</div><div class="desc">Engineers &amp; students trained</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section id="expertise" class="expertise-section">
+  <div class="section-label">Core Competencies</div>
+  <h2 class="section-title">Areas of <em>Expertise</em></h2>
+  <p class="section-subtitle">A multidisciplinary profile spanning engineering design, environmental assessment, renewable energy and academic innovation.</p>
+  <div class="expertise-grid">
+    <div class="expertise-card fade-up stagger-1"><div class="exp-icon">⚙️</div><div class="exp-title">Agricultural Mechanization</div><div class="exp-desc">Design, fabrication and field evaluation of harvesting systems; soil–tool interaction modelling; FEA simulations using ANSYS/COMSOL; CAD/CAE with SolidWorks and AutoCAD.</div></div>
+    <div class="expertise-card fade-up stagger-2"><div class="exp-icon">💧</div><div class="exp-title">Irrigation &amp; Drainage</div><div class="exp-desc">Feasibility studies, detailed engineering design and ESIA for irrigation schemes; smart irrigation control systems; MPC-based automation; IoT-enabled soil moisture monitoring.</div></div>
+    <div class="expertise-card fade-up stagger-3"><div class="exp-icon">☀️</div><div class="exp-title">Renewable Energy Systems</div><div class="exp-desc">Hybrid solar–wind system design; techno-economic assessment; Monte Carlo risk analysis; PVsyst and HelioScope modelling; energy storage and grid-interactive configurations.</div></div>
+    <div class="expertise-card fade-up stagger-4"><div class="exp-icon">🌿</div><div class="exp-title">Environmental Assessment</div><div class="exp-desc">NEMA Lead Expert for ESIA/EA; environmental and social management plans; biodiversity and hydrology impact assessments; climate safeguard integration in project design.</div></div>
+    <div class="expertise-card fade-up stagger-1"><div class="exp-icon">📡</div><div class="exp-title">Digital &amp; Smart Agriculture</div><div class="exp-desc">Digital control technologies; MATLAB, LabVIEW and statistical analysis; AI-enabled engineering design; data systems for climate-smart mechanization and irrigation.</div></div>
+    <div class="expertise-card fade-up stagger-2"><div class="exp-icon">🎓</div><div class="exp-title">Academic Leadership</div><div class="exp-desc">University-level teaching in irrigation, mechanization and environmental engineering; MSc/BSc supervision; curriculum development aligned with SDGs; C4DLab innovation mentorship.</div></div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="education-section">
+  <div class="section-label">Academic Formation</div>
+  <h2 class="section-title">Education &amp; <em>Training</em></h2>
+  <p class="section-subtitle">Formal academic qualifications and professional development underpinning over a decade of engineering practice.</p>
+  <div class="edu-grid">
+    <div class="edu-card fade-up stagger-1">
+      <div class="edu-degree">PhD — Environmental &amp; Biosystems Engineering</div>
+      <div class="edu-field">Modelling and Performance Optimization of a Mechanized Potato Harvester</div>
+      <div class="edu-inst">University of Nairobi, Kenya</div>
+      <div class="edu-year">2020 – 2025 · Approved Nov 2025 · Graduation Sep 2026</div>
+    </div>
+    <div class="edu-card fade-up stagger-2">
+      <div class="edu-degree">MSc — Agricultural Engineering</div>
+      <div class="edu-field">Power, Machinery and Mechanization Engineering</div>
+      <div class="edu-inst">Don State Technical University, Russian Federation</div>
+      <div class="edu-year">2015 – 2018</div>
+    </div>
+    <div class="edu-card fade-up stagger-3">
+      <div class="edu-degree">BSc — Environmental &amp; Biosystems Engineering</div>
+      <div class="edu-field">Environmental and Biosystems Engineering</div>
+      <div class="edu-inst">University of Nairobi, Kenya</div>
+      <div class="edu-year">2005 – 2010</div>
+    </div>
+    <div class="edu-card fade-up stagger-4">
+      <div class="edu-degree">Diploma — Technical Trainers Education</div>
+      <div class="edu-field">Environmental Science</div>
+      <div class="edu-inst">Kenya Technical Trainers College (KTTC)</div>
+      <div class="edu-year">Jun 2021 – Dec 2022</div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="experience-section">
+  <div class="section-label">Career Journey</div>
+  <h2 class="section-title">Professional <em>Experience</em></h2>
+  <p class="section-subtitle">Over twelve years of leadership across academia, government corporations, industry and the development sector.</p>
+  <div class="timeline-grid">
+    <div class="timeline">
+      <div class="timeline-item fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">Mar 2021 – Present</div>
+        <div class="timeline-role">Part-Time Lecturer</div>
+        <div class="timeline-org">University of Nairobi, Faculty of Engineering</div>
+        <div class="timeline-desc">Teaching irrigation engineering, smart agriculture and mechanization at undergraduate and postgraduate level. Supervising MSc and BSc research projects; contributing to curriculum development aligned with SDGs and CUE requirements.</div>
+      </div>
+      <div class="timeline-item fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">Aug 2023 – Oct 2024</div>
+        <div class="timeline-role">Knowledge Transfer Specialist</div>
+        <div class="timeline-org">AAKTP – UoN / Aston University UK / Solargen Technologies</div>
+        <div class="timeline-desc">Led technical implementation of a ~KSh 21M tri-institutional project on hybrid solar–wind powered smart irrigation systems. Achieved 58% reduction in LCOE and 71% reduction in CO₂ emissions. Trained 50+ engineers and students.</div>
+      </div>
+      <div class="timeline-item fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">Jul 2021 – Present</div>
+        <div class="timeline-role">Founder &amp; Lead Engineer</div>
+        <div class="timeline-org">Sisili Agritech Ltd, Kenya</div>
+        <div class="timeline-desc">Founded and lead a climate-focused agritech enterprise delivering climate-resilient mechanization and renewable-powered adaptation solutions for smallholder systems in East Africa. Host organisation for UoN Tech Skills Marketplace internships.</div>
+      </div>
+      <div class="timeline-item fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">Oct 2025 – Dec 2025</div>
+        <div class="timeline-role">Erasmus+ Traineeship Researcher</div>
+        <div class="timeline-org">Çukurova University, Turkey</div>
+        <div class="timeline-desc">Soil–machine interaction testing, FEA-based harvester component design, prototype assembly and field testing under Prof. Dr. Tunahan Erdem. Established active ongoing research collaboration.</div>
+      </div>
+      <div class="timeline-item fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">May 2025 – Present</div>
+        <div class="timeline-role">Innovation Fellowship Mentor</div>
+        <div class="timeline-org">C4DLab, University of Nairobi</div>
+        <div class="timeline-desc">Mentoring innovation fellows on technology development, prototyping, lean experimentation and commercialization. Guiding stakeholder engagement and impact-oriented innovation design.</div>
+      </div>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">Sep 2019 – May 2022</div>
+        <div class="timeline-role">Business Development Team Leader / Technical Manager</div>
+        <div class="timeline-org">G. North and Son Ltd</div>
+        <div class="timeline-desc">Managed a multidisciplinary team delivering agricultural mechanization and irrigation solutions across East Africa. Led client advisory, demonstrations and after-sales technical support.</div>
+      </div>
+      <div class="timeline-item fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">Jun 2013 – Mar 2015</div>
+        <div class="timeline-role">Manager, Engineering &amp; Technical Services</div>
+        <div class="timeline-org">Agricultural Development Corporation (ADC)</div>
+        <div class="timeline-desc">Oversaw planning, operation and maintenance of farm machinery fleets, irrigation and drainage systems and power infrastructure across ADC farms. Negotiated contracts and ensured regulatory compliance.</div>
+      </div>
+      <div class="timeline-item fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">Aug 2012 – Jun 2013</div>
+        <div class="timeline-role">Assistant Complex Manager</div>
+        <div class="timeline-org">ADC Sirikwa Farm</div>
+        <div class="timeline-desc">Managed farm operations including crop production, greenhouse mini-tuber production and design and construction of drainage systems and water infrastructure.</div>
+      </div>
+      <div class="timeline-item fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">Jul 2011 – Jun 2013</div>
+        <div class="timeline-role">Assistant Complex Manager</div>
+        <div class="timeline-org">ADC Asante Farm</div>
+        <div class="timeline-desc">Technical and administrative coordination; design, construction and maintenance of water drainage systems; budget preparation and staff performance monitoring.</div>
+      </div>
+      <div class="timeline-item fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-period">Jul 2010 – Jan 2011</div>
+        <div class="timeline-role">Manager on Training</div>
+        <div class="timeline-org">Agricultural Development Corporation (ADC)</div>
+        <div class="timeline-desc">Dam construction and design, water and irrigation system design and construction, and general engineering support for farm operations.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research" class="research-section">
+  <div class="section-label">Projects &amp; Grants</div>
+  <h2 class="section-title">Research &amp; <em>Innovation</em></h2>
+  <p class="section-subtitle">Applied and funded research spanning irrigation, renewable energy, mechanization and digital agriculture.</p>
+  <div class="research-cards">
+    <div class="research-card fade-up stagger-1">
+      <span class="rc-tag">Completed · 2023–2024</span>
+      <div class="rc-title">Hybrid Solar–Wind Smart Irrigation System for Smallholder Farmers</div>
+      <div class="rc-desc">Tri-institutional AAKTP project with Aston University (UK) and Solargen Technologies. 58% LCOE reduction, 71% CO₂ reduction vs diesel. MPC-based smart irrigation with IoT sensors deployed.</div>
+      <div class="rc-budget">~KSh 21 million · UoN, Aston UK, Solargen Kenya</div>
+    </div>
+    <div class="research-card fade-up stagger-2">
+      <span class="rc-tag">PhD Research · 2020–2025</span>
+      <div class="rc-title">Mechanized Potato Harvester for Small &amp; Medium-Scale Farms in Kenya</div>
+      <div class="rc-desc">Integrates soil–tool interaction modelling, FEA, multi-criteria decision analysis and design-fabrication-field evaluation of locally appropriate harvesting systems.</div>
+      <div class="rc-budget">University of Nairobi · Approved Nov 2025 · Graduation Sep 2026</div>
+    </div>
+    <div class="research-card fade-up stagger-3">
+      <span class="rc-tag">Proposed · 2025</span>
+      <div class="rc-title">Smart Solar-Powered Irrigation for Kenya's ASAL Regions</div>
+      <div class="rc-desc">ESC Industrial Research Chair (PI: Dr. Nanje). PVsyst/HelioScope modelling, IoT control systems, field deployment in Isinya, Kajiado County. Designed to train 150+ students.</div>
+      <div class="rc-budget">USD 80,000 · Partner: Solargen Technologies Ltd</div>
+    </div>
+    <div class="research-card fade-up stagger-4">
+      <span class="rc-tag">Proposed · 2025</span>
+      <div class="rc-title">Smart Manufacturing, Digital Fabrication &amp; Startup Success in Kenya</div>
+      <div class="rc-desc">ESC proposal (Co-PI) evaluating critical success factors for 50 early-stage technology startups. Digital fabrication, Industry 4.0 training and entrepreneurship development.</div>
+      <div class="rc-budget">USD 50,000 grant + USD 100,000 in-kind · Partner: Gearbox GPAN</div>
+    </div>
+    <div class="research-card fade-up stagger-1">
+      <span class="rc-tag">Completed · 2022–2024</span>
+      <div class="rc-title">GCA / AAAP Climate-Resilient Infrastructure &amp; Agriculture</div>
+      <div class="rc-desc">Contribution to GCA's Africa Adaptation Acceleration Program through UoN, focusing on the water–energy–food nexus, smart irrigation and renewable energy for climate adaptation.</div>
+      <div class="rc-budget">Partners: Global Centre on Adaptation, University of Nairobi</div>
+    </div>
+    <div class="research-card fade-up stagger-2">
+      <span class="rc-tag">Upcoming · Jul 2026</span>
+      <div class="rc-title">ReSuS-AFRICA Renewable Energy Summer School</div>
+      <div class="rc-desc">Co-organiser at UoN for Volkswagen Foundation's fully-funded programme bringing together 25 African PhD students across six renewable energy thematic areas.</div>
+      <div class="rc-budget">Fully funded · Partners: Makerere, Jimma, CSRS Côte d'Ivoire</div>
+    </div>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications" class="publications-section">
+  <div class="section-label">Scholarly Output</div>
+  <h2 class="section-title">Selected <em>Publications</em></h2>
+  <p class="section-subtitle">Peer-reviewed journal articles, conference papers, symposium contributions and preprints (2024–2026).</p>
+  <div class="pub-tabs">
+    <button class="pub-tab active" onclick="filterPubs('all', this)">All</button>
+    <button class="pub-tab" onclick="filterPubs('journal', this)">Journal Articles</button>
+    <button class="pub-tab" onclick="filterPubs('conference', this)">Conferences</button>
+    <button class="pub-tab" onclick="filterPubs('other', this)">Other</button>
+  </div>
+  <div class="pub-list" id="pub-list">
+    <div class="pub-item" data-cat="journal">
+      <div class="pub-type">Journal Article · 2025</div>
+      <div class="pub-title">Multi-criteria approach to determine the suitability of potato harvesters: Case study application of motorcycle-drawn harvester in Nyandarua County, Kenya</div>
+      <div class="pub-meta">Nanje, M.M., Gitau, A.N., &amp; Mbuge, D.O. · <em>Transactions on Engineering and Computing Sciences</em>, 13(1), 99–115 · <a href="https://doi.org/10.14738/tecs.1301.2025" target="_blank">doi:10.14738/tecs.1301.2025</a></div>
+    </div>
+    <div class="pub-item" data-cat="journal">
+      <div class="pub-type">Journal Article · 2024</div>
+      <div class="pub-title">Drivers for mechanizing potato harvesting in Kenya: Insights from Nyandarua County</div>
+      <div class="pub-meta">Nanje, M.M., Gitau, A.N., &amp; Mbuge, D.O. · <em>Academia Engineering</em>, 1(2) · <a href="https://doi.org/10.20935/AcadEng6231" target="_blank">doi:10.20935/AcadEng6231</a></div>
+    </div>
+    <div class="pub-item" data-cat="journal">
+      <div class="pub-type">Journal Article · 2024</div>
+      <div class="pub-title">Spatial analysis of factors influencing potato mechanization suitability in Nyandarua County</div>
+      <div class="pub-meta">Nanje, M.M., Gitau, A.N., &amp; Mbuge, D.O. · <em>IJISRT</em>, 9(10), 1572–1580 · <a href="https://doi.org/10.38124/ijisrt/IJISRT24OCT1333" target="_blank">doi:10.38124/ijisrt/IJISRT24OCT1333</a></div>
+    </div>
+    <div class="pub-item" data-cat="journal">
+      <div class="pub-type">Journal Article · 2025 (In press)</div>
+      <div class="pub-title">Performance of a locally fabricated one-row potato harvester for a walk-tractor</div>
+      <div class="pub-meta">Nanje, M.M., Gitau, A.N., &amp; Mbuge, D.O. · <em>Journal of Engineering in Agriculture and the Environment (JEAE)</em>, 10(3)</div>
+    </div>
+    <div class="pub-item" data-cat="journal">
+      <div class="pub-type">Journal Article · 2025 (In press)</div>
+      <div class="pub-title">Performance evaluation of a small-scale Irish potato (Solanum tuberosum L.) harvester</div>
+      <div class="pub-meta">Nanje, M.M., Gitau, A.N., &amp; Mbuge, D.O. · <em>CIGR Journal</em>, 27(2) · <a href="https://cigrjournal.org/index.php/Ejounral/article/" target="_blank">View Article ↗</a></div>
+    </div>
+    <div class="pub-item" data-cat="journal">
+      <div class="pub-type">Journal Article · 2025</div>
+      <div class="pub-title">Performance Evaluation of a Locally Designed Small-Scale Irish Potato (Solanum tuberosum L.) Harvester</div>
+      <div class="pub-meta">Nanje, M.M., Gitau, A.N., &amp; Mbuge, D.O.</div>
+    </div>
+    <div class="pub-item" data-cat="journal">
+      <div class="pub-type">Journal Article · 2025</div>
+      <div class="pub-title">Design and optimization of a single-row potato harvester for smallholder farmers</div>
+      <div class="pub-meta">Nanje, M.M., Gitau, A.N., &amp; Mbuge, D.O. · <em>Current Research in Agricultural Sciences</em>, 12(2), 177–192</div>
+    </div>
+    <div class="pub-item" data-cat="conference">
+      <div class="pub-type">Conference Paper · 2026</div>
+      <div class="pub-title">Hybrid Solar–Wind Powered Smart Irrigation System: Techno-Economic Analysis and Environmental Performance for Smallholder Farmers in Kajiado County, Kenya</div>
+      <div class="pub-meta">Nanje, M.M., Gitau, A.N., &amp; Mbuge, D.O. · <em>7th EPRA Research and Innovation Conference</em> · April 2026</div>
+    </div>
+    <div class="pub-item" data-cat="conference">
+      <div class="pub-type">Conference Abstract · 2025</div>
+      <div class="pub-title">Water–Energy–Food Nexus Dimensions of Hybrid Smart Irrigation for Smallholder Systems</div>
+      <div class="pub-meta">Nanje, M.M. · <em>WSCC25 – Water Security and Climate Change Conference</em>, Tashkent, Uzbekistan · Oct 2025</div>
+    </div>
+    <div class="pub-item" data-cat="other">
+      <div class="pub-type">Symposium Paper · 2026</div>
+      <div class="pub-title">Climate-Resilient Agriculture and Innovation in a Multipolar Africa: Towards Food–Energy–Water Security</div>
+      <div class="pub-meta">Nanje, M.M. · <em>17th Mwalimu Julius Nyerere Symposium</em>, University of Dar es Salaam · May 2026 · Under consideration for <em>The African Review (TARE)</em></div>
+    </div>
+    <div class="pub-item" data-cat="other">
+      <div class="pub-type">Preprint · 2024</div>
+      <div class="pub-title">Multi-criteria approach to determine the suitability of potato harvesters (Preprint)</div>
+      <div class="pub-meta">Nanje, M.M. et al. · <em>Research Square</em> · <a href="https://doi.org/10.21203/rs.3.rs-4024268/v1" target="_blank">doi:10.21203/rs.3.rs-4024268/v1</a></div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- INTERNATIONAL CONFERENCES & RESEARCH PRESENTATIONS -->
+<section id="conferences" class="conferences-section">
+  <div class="section-label">Global Presence</div>
+  <h2 class="section-title">International Conferences<br>&amp; <em>Research Presentations</em></h2>
+  <p class="section-subtitle">A record of conference papers, oral presentations, poster sessions and symposium contributions at national and international level.</p>
+
+  <div class="conf-grid">
+
+    <!-- 2026 -->
+    <div class="conf-year-group fade-up">
+      <div class="conf-year-label">2026</div>
+      <div class="conf-items">
+        <div class="conf-item">
+          <div class="conf-badge">🇫🇷</div>
+          <div class="conf-content">
+            <div class="conf-type">High-Level Summit · May 2026</div>
+            <div class="conf-title">Africa Forward Summit — Academic, Scientific &amp; Innovation Partnerships</div>
+            <div class="conf-meta">Invited and attended at the University of Nairobi, co-hosted by the Embassy of France in Kenya, in the presence of <strong>Mrs. Eleonore Caroit, Minister Delegate for International Partnerships</strong> of the Republic of France — celebrating academic, scientific &amp; innovation partnerships between UoN and French institutions.</div>
+            <span class="conf-cert-tag">✓ Attendee Confirmed &nbsp;<a href="https://drive.google.com/file/d/1TUTVU3iAtyJ8T93MHPUNO8t88XIpVGAs/view" target="_blank" class="cert-verify-link">View Badge ↗</a></span>
+          </div>
+        </div>
+        <div class="conf-item">
+          <div class="conf-badge">🏛️</div>
+          <div class="conf-content">
+            <div class="conf-type">International Symposium Paper · May 2026</div>
+            <div class="conf-title">17th Mwalimu Julius Nyerere African Studies Symposium — University of Dar es Salaam</div>
+            <div class="conf-meta">Presented paper: <strong>"Climate-Resilient Agriculture and Innovation in a Multipolar Africa: Towards Food–Energy–Water Security."</strong> Under consideration for publication in <em>The African Review (TARE)</em> journal.</div>
+            <span class="conf-cert-tag">✓ Paper Accepted &amp; Presented</span>
+          </div>
+        </div>
+        <div class="conf-item">
+          <div class="conf-badge">📄</div>
+          <div class="conf-content">
+            <div class="conf-type">Conference Paper · April 2026</div>
+            <div class="conf-title">7th EPRA International Research &amp; Innovation Conference</div>
+            <div class="conf-meta">Presented: <strong>"Hybrid Solar–Wind Powered Smart Irrigation System: Techno-Economic Analysis and Environmental Performance for Smallholder Farmers in Kajiado County, Kenya."</strong> Co-authored with Prof. A.N. Gitau &amp; Prof. D.O. Mbuge.</div>
+            <span class="conf-cert-tag">✓ Paper Accepted &amp; Presented</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2025 -->
+    <div class="conf-year-group fade-up">
+      <div class="conf-year-label">2025</div>
+      <div class="conf-items">
+        <div class="conf-item">
+          <div class="conf-badge">🔬</div>
+          <div class="conf-content">
+            <div class="conf-type">Oral Presentation · Dec 2025</div>
+            <div class="conf-title">AFINMIC 2025 International Student Microscopy Symposium — SEM Session</div>
+            <div class="conf-meta">Delivered an Oral Presentation at the <strong>AFINMIC 2025 International Student Microscopy Symposium</strong>, 1–4 December 2025. Presented: <strong>"Microscopy-Guided Artificial Intelligence for Smarter Soil–Sensor Interaction and Precision Irrigation in Semi-Arid Farming Systems"</strong> — integrating microscopy, AI, precision agriculture and smart irrigation for climate-smart farming.</div>
+            <span class="conf-cert-tag">✓ Certificate of Participation &nbsp;<a href="https://drive.google.com/file/d/1cpr_Omqdun4VDnvH6yN74kIOKYsOBN1Y/view" target="_blank" class="cert-verify-link">View Certificate ↗</a> &nbsp;·&nbsp; <a href="https://drive.google.com/file/d/1pvJmg49XVo2XWUHDZ7ic5AfdfCVS5XYY/view" target="_blank" class="cert-verify-link">View Programme ↗</a></span>
+          </div>
+        </div>
+        <div class="conf-item">
+          <div class="conf-badge">💧</div>
+          <div class="conf-content">
+            <div class="conf-type">Conference Poster · October 2025</div>
+            <div class="conf-title">WSCC25 — Water Security &amp; Climate Change Conference, Tashkent, Uzbekistan</div>
+            <div class="conf-meta">Poster accepted: <strong>"Water–Energy–Food Nexus Dimensions of Hybrid Smart Irrigation for Smallholder Systems"</strong> — Abstract ID 78. Presented to an international audience of water and climate professionals.</div>
+            <span class="conf-cert-tag">✓ Abstract Accepted · International Conference</span>
+          </div>
+        </div>
+        <div class="conf-item">
+          <div class="conf-badge">🌿</div>
+          <div class="conf-content">
+            <div class="conf-type">National Conference · April 2025</div>
+            <div class="conf-title">KeSEBAE Annual Conference 2025 — "Engineering Climate Change"</div>
+            <div class="conf-meta">Participated in the <strong>KeSEBAE Annual Conference 2025</strong> at the University of Nairobi, 23–25 April 2025. Contributed to discussions on climate resilience, sustainable engineering, environmental sustainability and agricultural mechanization.</div>
+            <span class="conf-cert-tag">✓ Certificate of Participation &nbsp;<a href="https://drive.google.com/file/d/1LvDS-VGlK9yTKvKLbC1dWSYDLX_CfUfV/view" target="_blank" class="cert-verify-link">View Certificate ↗</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- AWARDS & HONOURS -->
+<section id="awards" class="awards-section">
+  <div class="section-label">Recognition</div>
+  <h2 class="section-title">Awards &amp; <em>Honours</em></h2>
+  <p class="section-subtitle">Competitive fellowships, international scholarships and institutional recognitions for contributions to engineering, sustainability and innovation.</p>
+  <div class="awards-grid">
+    <div class="award-card fade-up stagger-1">
+      <div class="award-year">2026</div>
+      <div class="award-title">Jim Leech Mastercard Foundation Fellowship on Entrepreneurship</div>
+      <div class="award-org">Dunin-Deshpande Innovation Centre, Queen's University, Canada</div>
+      <div class="award-links"><span class="verified-tag">✓ Verified</span><a href="https://drive.google.com/file/d/1QIxsPsuukNi_PyG4A86ZoBMEDewxmpUG/view" target="_blank" class="cert-verify-link">Ignite Program ↗</a> <a href="https://drive.google.com/file/d/1KXG6nJ0Gbmj2HRnkiM4HtYaxQ3cSPd7B/view" target="_blank" class="cert-verify-link">Design Thinking ↗</a> <a href="https://drive.google.com/file/d/1PaScPh3e741snmfYVbJX2UzKhK965A24/view" target="_blank" class="cert-verify-link">Entrepreneurship ↗</a> <a href="https://drive.google.com/file/d/1aabWG7kwEJTdKUdV0TVGCxDWcDoKPWt8/view" target="_blank" class="cert-verify-link">Customer Discovery ↗</a></div>
+    </div>
+    <div class="award-card fade-up stagger-2">
+      <div class="award-year">2026</div>
+      <div class="award-title">ReSuS-AFRICA Summer School — Volkswagen Foundation</div>
+      <div class="award-org">Renewable Energy for Sustainable Development — Multi-University African Programme · Fully Funded</div>
+    </div>
+    <div class="award-card fade-up stagger-1">
+      <div class="award-year">2026</div>
+      <div class="award-title">Certificate of Mentorship — Industry–Academia Linkages</div>
+      <div class="award-org">University of Nairobi &amp; AFRETEC Network — UoN Company Series Programme</div>
+      <div class="award-links"><span class="verified-tag">✓ Verified</span><a href="https://drive.google.com/file/d/1QfOmUeiI2-3daX6ZkMxM-IB8q8FgF9-3/view" target="_blank" class="cert-verify-link">View Certificate ↗</a></div>
+    </div>
+    <div class="award-card fade-up stagger-3">
+      <div class="award-year">2025–2026</div>
+      <div class="award-title">Erasmus+ Research Mobility &amp; Traineeship Fellowship</div>
+      <div class="award-org">Çukurova University, Turkey — Agricultural Machinery &amp; Technologies · Oct–Dec 2025</div>
+    </div>
+    <div class="award-card fade-up stagger-4">
+      <div class="award-year">2025</div>
+      <div class="award-title">Una Europa Global Sustainability Advocate</div>
+      <div class="award-org">Erasmus+ UNAVEX / Una Europa Network · Certified 2025</div>
+    </div>
+    <div class="award-card fade-up stagger-1">
+      <div class="award-year">2024</div>
+      <div class="award-title">TNE WAGON2AFRICA Competitive Scholarship</div>
+      <div class="award-org">Politecnico di Torino, Italy — Biofuels, Bioproducts &amp; Biomaterials for the Green Transition</div>
+    </div>
+    <div class="award-card fade-up stagger-2">
+      <div class="award-year">2024</div>
+      <div class="award-title">African Food Changemakers BRACE Programme Award</div>
+      <div class="award-org">Competitive recognition for climate-smart agriculture contributions in East Africa</div>
+      <div class="award-links"><span class="verified-tag">✓ Verified</span><a href="https://drive.google.com/file/d/1DdQeztsaeoSS9vdNHT6U2rkcj-XRaEec/view" target="_blank" class="cert-verify-link">View Certificate ↗</a></div>
+    </div>
+    <div class="award-card fade-up stagger-3">
+      <div class="award-year">2024</div>
+      <div class="award-title">Tech Skills Marketplace Host Organisation</div>
+      <div class="award-org">University of Nairobi — Selected from competitive pool for student internship hosting</div>
+    </div>
+    <div class="award-card fade-up stagger-4">
+      <div class="award-year">2021–2022</div>
+      <div class="award-title">University of Nairobi Innovation Fellowship</div>
+      <div class="award-org">C4DLab — Sustainable Innovation Design Project</div>
+      <div class="award-links"><span class="verified-tag">✓ Verified</span><a href="https://drive.google.com/file/d/1u-pkpmGZBJnJ4EFA1mblB2WCRkBauM_I/view" target="_blank" class="cert-verify-link">View Certificate ↗</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROFESSIONAL MEMBERSHIPS -->
+<section id="memberships" class="memberships-section">
+  <div class="section-label">Professional Standing</div>
+  <h2 class="section-title">Professional <em>Memberships</em> &amp; Registrations</h2>
+  <p class="section-subtitle">Registrations and active memberships with national and international professional engineering and environmental bodies.</p>
+  <div class="membership-list">
+    <div class="membership-item">
+      <div class="membership-icon">✦</div>
+      <div class="membership-org">Engineers Board of Kenya (EBK)</div>
+      <div class="membership-meta">Registered Graduate Engineer · Serial No. 16782 · Mar 2019</div>
+      <div class="membership-links"><span class="verified-tag">✓ Verified</span><a href="https://drive.google.com/file/d/1bu3s-5k5xxgxG_FAJ3Rf9pmAULGCQUFM/view" target="_blank" class="cert-verify-link">View Certificate ↗</a></div>
+    </div>
+    <div class="membership-item">
+      <div class="membership-icon">✦</div>
+      <div class="membership-org">Institution of Engineers of Kenya (IEK)</div>
+      <div class="membership-meta">Graduate Member · Ref. IEK/HS/G.9084 · Feb 2021</div>
+      <div class="membership-links"><span class="verified-tag">✓ Verified</span><a href="https://drive.google.com/file/d/1ZtlKP1X_SWuX9MHciVFBgQbGrYunJHpm/view" target="_blank" class="cert-verify-link">View Certificate ↗</a></div>
+    </div>
+    <div class="membership-item">
+      <div class="membership-icon">✦</div>
+      <div class="membership-org">National Environment Management Authority (NEMA)</div>
+      <div class="membership-meta">Registered EIA/EA Lead Expert · Cert. No. NEMA/EIA/RC/6129 · Reg. No. 7001 · Sep 2021</div>
+      <div class="membership-links"><span class="verified-tag">✓ Verified</span><a href="https://drive.google.com/file/d/1dINmraVC2ze41DUWT81pdxKy0JW1LtTK/view" target="_blank" class="cert-verify-link">View Certificate ↗</a></div>
+    </div>
+    <div class="membership-item">
+      <div class="membership-icon">✦</div>
+      <div class="membership-org">Kenya Society of Environmental, Biological &amp; Agricultural Engineers (KeSEBAE)</div>
+      <div class="membership-meta">Member No. K21021 · Nov 2021</div>
+      <div class="membership-links"><span class="verified-tag">✓ Verified</span><a href="https://drive.google.com/file/d/1tAVSH3rvpqqfpPNgPp7GuXvxm06854KF/view" target="_blank" class="cert-verify-link">View Certificate ↗</a></div>
+    </div>
+    <div class="membership-item">
+      <div class="membership-icon">✦</div>
+      <div class="membership-org">American Society of Agricultural and Biological Engineers (ASABE)</div>
+      <div class="membership-meta">Member No. 1061840 · Jul 2022</div>
+      <div class="membership-links">
+        <span class="verified-tag">✓ Verified</span>
+        <a href="https://drive.google.com/file/d/19UEhJE4y4bBo8scDxI0OtM1Q2Ry81Tk5/view" target="_blank" class="cert-verify-link">View Certificate ↗</a>
+        <a href="https://drive.google.com/file/d/1qqNPkUNB-y2lZ1FKwzHIAGRWKnU9ZvxN/view" target="_blank" class="cert-verify-link">View Welcome Letter ↗</a>
+      </div>
+    </div>
+    <div class="membership-item">
+      <div class="membership-icon">✦</div>
+      <div class="membership-org">TVETA</div>
+      <div class="membership-meta">Registered Trainer, Assessor &amp; Verifier (Environmental &amp; Biosystems Engineering) · License No. TVETA/T233616 · Valid to Jun 2026</div>
+      <div class="membership-links"><span class="verified-tag">✓ Verified</span><a href="https://drive.google.com/file/d/1x_won6ux8-4pRZDTzw4INNtThWm1aBvM/view" target="_blank" class="cert-verify-link">View Certificate ↗</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROFESSIONAL DEVELOPMENT & TRAINING -->
+<section id="profdev" class="profdev-section">
+  <div class="section-label">Continuous Learning</div>
+  <h2 class="section-title">Professional Development<br>&amp; <em>Specialist Training</em></h2>
+  <p class="section-subtitle">A comprehensive record of specialist short courses, professional certifications and technical training programmes undertaken across Kenya, South Africa, Turkey and internationally.</p>
+  <div class="profdev-grid">
+
+    <div class="profdev-card fade-up stagger-1">
+      <div class="profdev-card-top">
+        <div class="profdev-icon">☀️</div>
+        <div class="profdev-year-badge">2023</div>
+      </div>
+      <div class="profdev-title">T3 Grid Tie Solar PV Training</div>
+      <div class="profdev-issuer">GIZ &amp; Strathmore University Energy Research Centre (SERC), Nairobi · Oct–Nov 2023</div>
+      <div class="profdev-desc">Advanced technical training on grid-tied solar PV system design, installation, commissioning and safety. Underpins Dr. Nanje's solar-powered irrigation and hybrid energy systems work.</div>
+      <span class="profdev-cert">✓ Certificate of Completion</span>
+    </div>
+
+    <div class="profdev-card fade-up stagger-2">
+      <div class="profdev-card-top">
+        <div class="profdev-icon">🌊</div>
+        <div class="profdev-year-badge">2024</div>
+      </div>
+      <div class="profdev-title">WEF Nexus Masterclass</div>
+      <div class="profdev-issuer">IHE Delft / Global Water Partnership / University of KwaZulu-Natal / WaterNet · Jun 2024</div>
+      <div class="profdev-desc">Completed the global Water–Energy–Food Nexus Masterclass, directly strengthening the interdisciplinary nexus approach central to Dr. Nanje's irrigation and renewable energy research programme.</div>
+      <span class="profdev-cert">✓ Certificate Issued &nbsp;<a href="https://drive.google.com/file/d/13avAUKUdC9sbJbwpCisqPumQpX5Mhl71/view" target="_blank" class="cert-verify-link">View Certificate ↗</a></span>
+    </div>
+
+    <div class="profdev-card fade-up stagger-3">
+      <div class="profdev-card-top">
+        <div class="profdev-icon">🚀</div>
+        <div class="profdev-year-badge">2024</div>
+      </div>
+      <div class="profdev-title">Wits Prospectors Course in Entrepreneurship</div>
+      <div class="profdev-issuer">Wits Innovation Centre (WIC) / AFRETEC Network, University of Witwatersrand · Jul 2024</div>
+      <div class="profdev-desc">5-day intensive entrepreneurship programme covering technology commercialisation, venture building, innovation ecosystems and entrepreneurship within the African context.</div>
+      <span class="profdev-cert">✓ Certificate of Attendance &nbsp;<a href="https://drive.google.com/file/d/1vWtPdTPIwpxAaLXBXWFCPcpSez1Ihn0Z/view" target="_blank" class="cert-verify-link">View Certificate ↗</a></span>
+    </div>
+
+    <div class="profdev-card fade-up stagger-4">
+      <div class="profdev-card-top">
+        <div class="profdev-icon">🧬</div>
+        <div class="profdev-year-badge">2024</div>
+      </div>
+      <div class="profdev-title">Precision Medicine &amp; Biomedical Informatics in Africa (PMBIA)</div>
+      <div class="profdev-issuer">Sydney Brenner Institute for Molecular Bioscience (SBIMB) &amp; WitsBits · Oct 2024</div>
+      <div class="profdev-desc">Short course on precision medicine, genomic data, biomedical informatics tools and translational science applications in the African context. Extends Dr. Nanje's interdisciplinary reach into health-technology interfaces.</div>
+      <span class="profdev-cert">✓ Certificate of Completion &nbsp;<a href="https://drive.google.com/file/d/1wDtXml_WJL9jZ_IE0nODY0CfnQvhYDUm/view" target="_blank" class="cert-verify-link">View Certificate ↗</a></span>
+    </div>
+
+    <div class="profdev-card fade-up stagger-1">
+      <div class="profdev-card-top">
+        <div class="profdev-icon">🌿</div>
+        <div class="profdev-year-badge">2025</div>
+      </div>
+      <div class="profdev-title">Erasmus+ UNAVEX Virtual Exchange + Una Europa Global Sustainability Advocate</div>
+      <div class="profdev-issuer">Una Europa Network (Helsinki, KU Leuven, UNIBO, UoJ, UoN) · Feb–Mar 2025</div>
+      <div class="profdev-desc">Completed mandatory courses: UnaVEx Virtual Exchange, Introduction to Sustainability (3 ECTS), Climate.now (2 ECTS), Biodiversity.now (2 ECTS). Awarded the Una Europa Global Sustainability Advocate designation.</div>
+      <span class="profdev-cert">✓ Erasmus+ UNAVEX &nbsp;<a href="https://drive.google.com/file/d/1N43pfxRFi5qHxcS7j1nvtUlzVm_QwtOT/view" target="_blank" class="cert-verify-link">View Certificate ↗</a> &nbsp;·&nbsp; GSA Certificate &nbsp;<a href="https://drive.google.com/file/d/1JliSqrn5bfNnE5OVb1uQh0HNSWhx9HpY/view" target="_blank" class="cert-verify-link">View Certificate ↗</a></span>
+    </div>
+
+    <div class="profdev-card fade-up stagger-2">
+      <div class="profdev-card-top">
+        <div class="profdev-icon">📝</div>
+        <div class="profdev-year-badge">2025</div>
+      </div>
+      <div class="profdev-title">Grant Proposal Writing for PhD Students &amp; Early Career Researchers</div>
+      <div class="profdev-issuer">CARTA Project, University of Nairobi · April 2025</div>
+      <div class="profdev-desc">Two-day intensive training on research grant proposal writing, research funding strategies and open science practices for PhD students and early career researchers in Africa.</div>
+      <span class="profdev-cert">✓ Certificate of Attendance &nbsp;<a href="https://drive.google.com/file/d/1AvjqEajNHmbAVjVGhbc4fnfRK1j7PD2s/view" target="_blank" class="cert-verify-link">View Certificate ↗</a></span>
+    </div>
+
+    <div class="profdev-card fade-up stagger-3">
+      <div class="profdev-card-top">
+        <div class="profdev-icon">🔬</div>
+        <div class="profdev-year-badge">2025</div>
+      </div>
+      <div class="profdev-title">Erasmus+ Research Mobility — Agricultural Machinery &amp; Technologies</div>
+      <div class="profdev-issuer">Çukurova University, Turkey · Oct–Dec 2025</div>
+      <div class="profdev-desc">Three-month Erasmus+ research traineeship under Prof. Dr. Tunahan Erdem. Soil–machine interaction testing, FEA-based harvester design, prototype assembly and field evaluation. Resulted in joint publications and Horizon Europe collaboration.</div>
+      <span class="profdev-cert">✓ Erasmus+ Mobility Fellowship Certificate &nbsp;<span style="font-family:'DM Mono',monospace;font-size:0.58rem;color:var(--amber);opacity:0.7;">[Certificate to be added]</span></span>
+    </div>
+
+    <div class="profdev-card fade-up stagger-2">
+      <div class="profdev-card-top">
+        <div class="profdev-icon">⚙️</div>
+        <div class="profdev-year-badge">2025</div>
+      </div>
+      <div class="profdev-title">IEK Webinar — "Bridging the Gap: From Campus to Industry"</div>
+      <div class="profdev-issuer">Institution of Engineers of Kenya (IEK) · 17 July 2025</div>
+      <div class="profdev-desc">Professional development webinar focusing on engineering professionalism, industry readiness, innovation, career transition and professional networking within the Kenyan engineering sector.</div>
+      <span class="profdev-cert">✓ Certificate of Participation &nbsp;<a href="https://drive.google.com/file/d/1Xb_50JPTm3fgOkEsy3NKHewfUqEMRT0u/view" target="_blank" class="cert-verify-link">View Certificate ↗</a></span>
+    </div>
+
+    <div class="profdev-card fade-up stagger-3">
+      <div class="profdev-card-top">
+        <div class="profdev-icon">🏆</div>
+        <div class="profdev-year-badge">2026</div>
+      </div>
+      <div class="profdev-title">Ignite Entrepreneurship Program — Jim Leech Mastercard Foundation Fellow</div>
+      <div class="profdev-issuer">Dunin-Deshpande Innovation Centre, Queen's University, Canada · 2026</div>
+      <div class="profdev-desc">Successfully completed the Ignite Entrepreneurship Program, strengthening skills in innovation, venture development, business model design, startup financing, commercialization and pitching. Advanced to the Launch Entrepreneurship phase, further developing Sisili Agritech's growth strategy, investment readiness and market expansion pathway for sustainable agricultural innovation in Africa.</div>
+      <span class="profdev-cert">✓ Fellow Certificate &nbsp;<a href="https://drive.google.com/file/d/1QIxsPsuukNi_PyG4A86ZoBMEDewxmpUG/view" target="_blank" class="cert-verify-link">View Certificate ↗</a></span>
+    </div>
+
+    <div class="profdev-card fade-up stagger-4">
+      <div class="profdev-card-top">
+        <div class="profdev-icon">✒️</div>
+        <div class="profdev-year-badge">2026</div>
+      </div>
+      <div class="profdev-title">Scholarly Communication &amp; Academic Research Proposal Writing — Open Science</div>
+      <div class="profdev-issuer">Training Centre in Communication (TCC) / University of Nairobi · Feb 2026</div>
+      <div class="profdev-desc">Two-day intensive programme on scholarly communication best practices, academic writing, open science principles and research dissemination strategies for engineers and scientists.</div>
+      <span class="profdev-cert">✓ Certificate of Completion &nbsp;<a href="https://drive.google.com/file/d/17tSPbjB5Ov9fPCNOM5V85MvA3uBlpckt/view" target="_blank" class="cert-verify-link">View Certificate ↗</a></span>
+    </div>
+
+    <div class="profdev-card fade-up stagger-1">
+      <div class="profdev-card-top">
+        <div class="profdev-icon">🌱</div>
+        <div class="profdev-year-badge">2026</div>
+      </div>
+      <div class="profdev-title">Advanced Skills Course — Biofuels, Bioproducts &amp; Biomaterials for the Green Transition</div>
+      <div class="profdev-issuer">Politecnico di Torino (Italy) / AICAD / JKUAT — TNE WAGON2AFRICA · Feb 2026</div>
+      <div class="profdev-desc">Competitive scholarship award. Advanced course covering sustainable bioresource utilisation, renewable energy systems, circular economy approaches, biomaterial applications and green transition technologies.</div>
+      <span class="profdev-cert">✓ Certificate of Attendance &nbsp;<a href="https://drive.google.com/file/d/1_ObW5TH45lpo_noVfOGoIDgIDVU8fVIS/view" target="_blank" class="cert-verify-link">View Certificate ↗</a></span>
+    </div>
+
+    <div class="profdev-card fade-up stagger-3">
+      <div class="profdev-card-top">
+        <div class="profdev-icon">🏗️</div>
+        <div class="profdev-year-badge">2026</div>
+      </div>
+      <div class="profdev-title">WCCE International Webinar — The Role of Engineers &amp; Related Professionals in Building Construction</div>
+      <div class="profdev-issuer">World Council of Civil Engineers (WCCE) · June 2026</div>
+      <div class="profdev-desc">Participated in the WCCE international webinar on "The Role of Engineers, Town Planners, Architects, Quantity Surveyors and Related Professionals in the Building Construction Sector", gaining insights into multidisciplinary collaboration and sustainable construction practices.</div>
+      <span class="profdev-cert">✓ Certificate of Participation &nbsp;<a href="https://drive.google.com/file/d/1tTKGSUwaHlHlRgVCko2BukTqq5STrq7E/view" target="_blank" class="cert-verify-link">View Certificate ↗</a></span>
+    </div>
+
+    <div class="profdev-card fade-up stagger-2">
+      <div class="profdev-card-top">
+        <div class="profdev-icon">🎓</div>
+        <div class="profdev-year-badge">2021–2022</div>
+      </div>
+      <div class="profdev-title">Diploma in Technical Trainers Education — Environmental Science</div>
+      <div class="profdev-issuer">Kenya Technical Trainers College (KTTC) · Jun 2021–Dec 2022</div>
+      <div class="profdev-desc">Formal qualification in technical and vocational education pedagogy, underpinning Dr. Nanje's role as a TVETA-registered Trainer, Assessor and Verifier in Environmental Science.</div>
+      <span class="profdev-cert">✓ Registered &nbsp;<a href="https://drive.google.com/file/d/1x_won6ux8-4pRZDTzw4INNtThWm1aBvM/view" target="_blank" class="cert-verify-link">View TVETA Certificate ↗</a></span>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="section-label">Get In Touch</div>
+  <h2 class="section-title">Let's <em>Connect</em></h2>
+  <div class="contact-grid">
+    <div>
+      <p class="contact-intro">"Open to research collaborations, consultancy engagements, academic partnerships and speaking opportunities in environmental engineering, smart irrigation and sustainable mechanization."</p>
+      <div class="contact-details">
+        <div class="contact-row">
+          <div class="c-icon">✉</div>
+          <div class="c-info"><span class="c-label">Institutional Email</span><span class="c-value"><a href="mailto:martinnanje@uonbi.ac.ke">martinnanje@uonbi.ac.ke</a></span></div>
+        </div>
+        <div class="contact-row">
+          <div class="c-icon">✉</div>
+          <div class="c-info"><span class="c-label">Personal Email</span><span class="c-value"><a href="mailto:martinnanje30@gmail.com">martinnanje30@gmail.com</a></span></div>
+        </div>
+        <div class="contact-row">
+          <div class="c-icon">✆</div>
+          <div class="c-info"><span class="c-label">Phone</span><span class="c-value"><a href="tel:+254722391593">+254 722 391 593</a></span></div>
+        </div>
+        <div class="contact-row">
+          <div class="c-icon">in</div>
+          <div class="c-info"><span class="c-label">LinkedIn</span><span class="c-value"><a href="https://www.linkedin.com/in/martin-nanje-a88750198" target="_blank">linkedin.com/in/martin-nanje-a88750198</a></span></div>
+        </div>
+        <div class="contact-row">
+          <div class="c-icon">📍</div>
+          <div class="c-info"><span class="c-label">Institution</span><span class="c-value">Dept. of Environmental &amp; Biosystems Engineering<br>Faculty of Engineering, University of Nairobi<br>P.O Box 30197 – 00100, Nairobi, Kenya</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-card">
+      <h3>Academic References</h3>
+      <div class="references-list">
+        <div class="ref-item">
+          <div class="ref-name">Prof. Ayub N. Gitau</div>
+          <div class="ref-title">Vice-Chancellor, University of Nairobi</div>
+          <div class="ref-contact"><a href="mailto:ayub.gitau@uonbi.ac.ke" style="color:var(--amber-lt); text-decoration:none;">ayub.gitau@uonbi.ac.ke</a> · +254 722 878 029</div>
+        </div>
+        <div class="ref-item">
+          <div class="ref-name">Prof. Duncan O. Mbuge</div>
+          <div class="ref-title">Associate Professor, Dept. of Environmental &amp; Biosystems Engineering, UoN</div>
+          <div class="ref-contact"><a href="mailto:duncan.mbuge@uonbi.ac.ke" style="color:var(--amber-lt); text-decoration:none;">duncan.mbuge@uonbi.ac.ke</a> · +254 725 949 093</div>
+        </div>
+        <div class="ref-item">
+          <div class="ref-name">Dr. Wilson Tonui</div>
+          <div class="ref-title">Managing Director, Agricultural Development Corporation (ADC)</div>
+          <div class="ref-contact"><a href="mailto:wilsontonui2018@gmail.com" style="color:var(--amber-lt); text-decoration:none;">wilsontonui2018@gmail.com</a> · +254 722 798 967</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <div class="footer-brand">Dr. M.M. <em>Nanje</em></div>
+      <p class="footer-tagline">Environmental &amp; Biosystems Engineer · PhD · University of Nairobi, Kenya. Open to research collaborations, consultancy and academic partnerships.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#memberships">Memberships</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <a href="mailto:martinnanje@uonbi.ac.ke">✉ Email</a>
+      <a href="https://www.linkedin.com/in/martin-nanje-a88750198" target="_blank">in LinkedIn</a>
+      <a href="https://drive.google.com/file/d/1fMK-XXw_GG9yleABtl_FIuHSyMZI4q3i/view" target="_blank">⬇ View CV</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Dr. Martin Mang'eni Nanje · Environmental &amp; Biosystems Engineer · University of Nairobi, Kenya</p>
+    <a href="#home">Top ↑</a>
+  </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+  // Fade-up observer
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Publication filter
+  function filterPubs(cat, btn) {
+    document.querySelectorAll('.pub-tab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.pub-item').forEach(item => {
+      item.style.display = (cat === 'all' || item.dataset.cat === cat) ? 'block' : 'none';
+    });
+  }
+
+  // Mobile menu
+  function toggleMenu() {
+    document.getElementById('hamburger').classList.toggle('open');
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('hamburger').classList.remove('open');
+    document.getElementById('mobileMenu').classList.remove('open');
+  }
+
+  // Back to top
+  window.addEventListener('scroll', () => {
+    document.getElementById('backToTop').classList.toggle('visible', window.scrollY > 400);
+  });
+
+  // Scroll progress bar
+  window.addEventListener('scroll', () => {
+    const h = document.documentElement;
+    const scrolled = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+    document.getElementById('scrollProgress').style.width = scrolled + '%';
+  });
+
+  // Scrollspy — highlight active nav link
+  const navLinks = document.querySelectorAll('nav ul li a[href^="#"], .mobile-menu a[href^="#"]');
+  const spySections = [...new Set([...navLinks].map(l => l.getAttribute('href')))]
+    .map(id => document.querySelector(id))
+    .filter(Boolean);
+  const spyObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const id = '#' + entry.target.id;
+        navLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === id));
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  spySections.forEach(s => spyObserver.observe(s));
+</script>
+</body>
+</html>
