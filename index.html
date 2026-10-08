@@ -206,14 +206,14 @@
 
   /* SECTIONS */
   body { counter-reset: section; }
-  section { padding: 90px 8vw; }
+  section { padding: 100px 8vw; }
   section:not(.hero) { counter-increment: section; }
   .section-label { font-family: 'DM Mono', monospace; color: var(--amber); font-size: 0.73rem; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 0.8rem; display: flex; align-items: center; gap: 10px; }
   .section-label::before { content: counter(section, decimal-leading-zero) " ·"; opacity: 0.55; }
   .section-label::after { content: ''; display: inline-block; height: 1px; width: 40px; background: var(--amber); }
   .section-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 600; color: var(--forest); line-height: 1.15; margin-bottom: 1rem; }
   .section-title em { font-style: italic; color: var(--amber); }
-  .section-subtitle { color: var(--muted); max-width: 640px; margin-bottom: 3rem; font-size: 0.95rem; }
+  .section-subtitle { color: var(--muted); max-width: 640px; margin-bottom: 2.8rem; font-size: 0.95rem; }
   .divider { width: 60px; height: 1px; background: var(--amber); margin: 1.5rem 0 2.5rem; }
 
   /* ABOUT */
@@ -224,10 +224,45 @@
   .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5vw; align-items: start; }
   .about-text p { margin-bottom: 1rem; color: #3a3a38; font-size: 0.96rem; }
   .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-  .stat-card { background: var(--forest); color: var(--cream); padding: 24px 20px; border-radius: 4px; position: relative; overflow: hidden; }
+  .stat-card { background: var(--forest); color: var(--cream); padding: 24px 20px; border-radius: 14px; position: relative; overflow: hidden; box-shadow: 0 16px 28px rgba(27,58,44,0.14); }
   .stat-card::before { content: ''; position: absolute; bottom: 0; right: 0; width: 60px; height: 60px; background: rgba(193,122,43,0.15); border-radius: 50% 0 0 0; }
   .stat-card .num { font-family: 'Cormorant Garamond', serif; font-size: 2.8rem; font-weight: 700; color: var(--amber-lt); line-height: 1; margin-bottom: 6px; }
   .stat-card .desc { font-size: 0.75rem; opacity: 0.75; font-family: 'DM Mono', monospace; letter-spacing: 0.04em; line-height: 1.4; }
+  .impact-band {
+    margin-top: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  .impact-item {
+    background: rgba(255,252,245,0.72);
+    border: 1px solid rgba(27,58,44,0.12);
+    border-radius: 14px;
+    padding: 1.1rem 1rem;
+    box-shadow: 0 12px 24px rgba(27,58,44,0.06);
+  }
+  .impact-label {
+    display: block;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 0.45rem;
+  }
+  .impact-item strong {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    color: var(--forest);
+    line-height: 1.2;
+    margin-bottom: 0.25rem;
+  }
+  .impact-item small {
+    color: var(--muted);
+    font-size: 0.72rem;
+    line-height: 1.5;
+  }
 
   /* EXPERTISE */
   .expertise-section {
@@ -239,7 +274,7 @@
   .expertise-section .section-label::after { background: var(--amber-lt); }
   .expertise-section .section-subtitle { color: rgba(245,240,230,0.7); }
   .expertise-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.5rem; }
-  .expertise-card { background: rgba(44,90,67,0.62); border: 1px solid rgba(193,122,43,0.28); padding: 28px 24px; border-radius: 4px; transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s, background 0.25s; position: relative; overflow: hidden; }
+  .expertise-card { background: rgba(44,90,67,0.62); border: 1px solid rgba(193,122,43,0.28); padding: 28px 24px; border-radius: 16px; transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s, background 0.25s; position: relative; overflow: hidden; box-shadow: 0 12px 28px rgba(0,0,0,0.08); }
   .expertise-card::before { content: ''; position: absolute; top: 0; left: 0; height: 3px; width: 0; background: var(--amber); transition: width 0.3s; }
   .expertise-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.2); border-color: rgba(193,122,43,0.5); background: rgba(44,90,67,0.85); }
   .expertise-card:hover::before { width: 100%; }
@@ -269,8 +304,8 @@
       url('background1.jpg') center / cover no-repeat;
   }
   .edu-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; }
-  .edu-card { background: var(--card-bg); border: 1px solid rgba(27,58,44,0.12); padding: 24px 22px; border-radius: 4px; transition: all 0.25s; border-top: 3px solid var(--amber); }
-  .edu-card:hover { box-shadow: 0 8px 30px rgba(27,58,44,0.1); transform: translateY(-3px); }
+  .edu-card { background: var(--card-bg); border: 1px solid rgba(27,58,44,0.12); padding: 24px 22px; border-radius: 14px; transition: all 0.25s; border-top: 3px solid var(--amber); box-shadow: 0 12px 22px rgba(27,58,44,0.05); }
+  .edu-card:hover { box-shadow: 0 12px 30px rgba(27,58,44,0.12); transform: translateY(-3px); }
   .edu-degree { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 700; color: var(--forest); margin-bottom: 4px; }
   .edu-field { font-size: 0.82rem; color: var(--muted); font-style: italic; margin-bottom: 8px; }
   .edu-inst { font-size: 0.85rem; color: var(--charcoal); font-weight: 500; }
@@ -286,8 +321,8 @@
   .research-section .section-label::after { background: var(--amber-lt); }
   .research-section .section-subtitle { color: rgba(245,240,230,0.6); }
   .research-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; }
-  .research-card { background: rgba(44,90,67,0.6); border: 1px solid rgba(193,122,43,0.2); padding: 28px 24px; border-radius: 4px; transition: background 0.25s, border-color 0.25s; }
-  .research-card:hover { background: rgba(44,90,67,0.9); border-color: rgba(193,122,43,0.5); }
+  .research-card { background: rgba(44,90,67,0.6); border: 1px solid rgba(193,122,43,0.2); padding: 28px 24px; border-radius: 16px; transition: background 0.25s, border-color 0.25s, box-shadow 0.25s; box-shadow: 0 12px 24px rgba(0,0,0,0.08); }
+  .research-card:hover { background: rgba(44,90,67,0.9); border-color: rgba(193,122,43,0.5); box-shadow: 0 16px 32px rgba(0,0,0,0.12); }
   .rc-tag { font-family: 'DM Mono', monospace; font-size: 0.62rem; color: var(--amber-lt); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 10px; display: block; }
   .rc-title { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 600; color: var(--cream); margin-bottom: 10px; line-height: 1.3; }
   .rc-desc { font-size: 0.82rem; color: rgba(245,240,230,0.65); line-height: 1.6; }
@@ -316,8 +351,8 @@
       url('background2.jpg') center / cover no-repeat;
   }
   .awards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; }
-  .award-card { border: 1px solid rgba(27,58,44,0.12); padding: 24px 20px; border-radius: 4px; transition: all 0.25s; }
-  .award-card:hover { border-color: var(--amber); box-shadow: 0 8px 30px rgba(193,122,43,0.1); }
+  .award-card { border: 1px solid rgba(27,58,44,0.12); padding: 24px 20px; border-radius: 14px; transition: all 0.25s; box-shadow: 0 12px 22px rgba(27,58,44,0.05); }
+  .award-card:hover { border-color: var(--amber); box-shadow: 0 12px 30px rgba(193,122,43,0.1); }
   .award-year { font-family: 'DM Mono', monospace; font-size: 0.65rem; color: var(--amber); letter-spacing: 0.1em; margin-bottom: 8px; }
   .award-title { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; color: var(--forest); margin-bottom: 6px; line-height: 1.3; }
   .award-org { font-size: 0.78rem; color: var(--muted); }
@@ -328,8 +363,8 @@
       url('background1.jpg') center / cover no-repeat;
   }
   .membership-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.5rem; }
-  .membership-item { display: flex; flex-direction: column; background: var(--card-bg); padding: 22px 20px; border-radius: 4px; border: 1px solid rgba(27,58,44,0.12); transition: all 0.25s; }
-  .membership-item:hover { border-color: var(--amber); box-shadow: 0 8px 30px rgba(193,122,43,0.1); }
+  .membership-item { display: flex; flex-direction: column; background: var(--card-bg); padding: 22px 20px; border-radius: 14px; border: 1px solid rgba(27,58,44,0.12); transition: all 0.25s; box-shadow: 0 12px 22px rgba(27,58,44,0.05); }
+  .membership-item:hover { border-color: var(--amber); box-shadow: 0 12px 30px rgba(193,122,43,0.1); }
   .membership-icon { color: var(--amber); font-size: 0.7rem; margin-bottom: 10px; }
   .membership-org { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; font-weight: 600; color: var(--forest); margin-bottom: 8px; line-height: 1.3; }
   .membership-meta { font-size: 0.78rem; color: var(--muted); line-height: 1.6; flex-grow: 1; }
@@ -404,6 +439,7 @@
     .hero { grid-template-columns: 1fr; }
     .hero-visual { display: flex; padding-top: 0; }
     .about-grid, .contact-grid, .timeline-grid { grid-template-columns: 1fr; }
+    .impact-band { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     section { padding: 60px 6vw; }
     .hero-content { padding: 120px 6vw 60px; }
     .hero-photo-wrap { width: min(360px, 86vw); }
@@ -411,7 +447,7 @@
     .hp-right { right: -20px; }
   }
   @media (max-width: 600px) {
-    .about-stats { grid-template-columns: 1fr; }
+    .about-stats, .impact-band { grid-template-columns: 1fr; }
     .cv-strip { flex-direction: column; text-align: center; }
   }
   @media (max-width: 480px) {
@@ -538,11 +574,12 @@
   .profdev-card {
     background: rgba(44,90,67,0.62);
     border: 1px solid rgba(193,122,43,0.25);
-    border-radius: 6px;
+    border-radius: 16px;
     padding: 22px 22px;
     transition: all 0.25s;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.08);
   }
   .profdev-card:hover { transform: translateY(-3px); box-shadow: 0 10px 32px rgba(0,0,0,0.25); border-color: rgba(193,122,43,0.5); background: rgba(44,90,67,0.85); }
   .profdev-card-top { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 10px; }
@@ -752,16 +789,38 @@
   <div class="divider"></div>
   <div class="about-grid fade-up">
     <div class="about-text">
-      <p>I am an Environmental and Biosystems Engineer with over twelve years of progressive responsibility spanning academia, research, consultancy and professional engineering across government, industry and development projects in Kenya and Sub-Saharan Africa.</p>
-      <p>My expertise spans agricultural mechanization, irrigation and drainage engineering, renewable energy systems, environmental sustainability, biomedical informatics and climate-resilient infrastructure development, with a focus on the <strong>water–energy–food nexus</strong>.</p>
-      <p>I have completed my doctoral studies at the University of Nairobi with a thesis on modelling and performance optimization of a mechanized potato harvester for small and medium-scale farms in Kenya, integrating soil–tool interaction modelling, finite element analysis and multi-criteria decision modelling.</p>
-      <p>As a NEMA-registered Lead Expert, I have undertaken extensive consultancy on major infrastructure including the Umba Irrigation Project, Galana–Kulalu Food Security Project and several small hydropower and wind power projects. I am also the founder of <strong>Sisili Agritech Ltd</strong> — a climate-focused agritech enterprise for smallholder systems in East Africa.</p>
+      <p>I am an Environmental & Biosystems Engineer with 12+ years of applied experience across academia, research and consultancy in Kenya and the wider region. My work focuses on engineering solutions that increase smallholder productivity while reducing environmental impact.</p>
+      <p>Core technical strengths include agricultural mechanization, smart irrigation, renewable energy integration and climate-resilient infrastructure, all centred on the <strong>water–energy–food nexus</strong>.</p>
+      <p>My doctoral research at the University of Nairobi combined soil–tool interaction modelling, FEA and field trials to optimise a mechanized potato harvester for small and medium-scale farms. I am a NEMA-registered Lead Expert and founder of <strong>Sisili Agritech Ltd</strong>, which translates research into operational prototypes and services for farming communities.</p>
     </div>
     <div class="about-stats">
       <div class="stat-card"><div class="num">12+</div><div class="desc">Years of professional experience</div></div>
       <div class="stat-card"><div class="num">7+</div><div class="desc">Peer-reviewed publications</div></div>
       <div class="stat-card"><div class="num">5+</div><div class="desc">Major ESIA consultancy assignments</div></div>
       <div class="stat-card"><div class="num">50+</div><div class="desc">Engineers &amp; students trained</div></div>
+    </div>
+  </div>
+
+  <div class="impact-band fade-up">
+    <div class="impact-item">
+      <span class="impact-label">Research</span>
+      <strong>Climate-smart systems</strong>
+      <small>Smart irrigation, mechanization, and sustainable infrastructure design.</small>
+    </div>
+    <div class="impact-item">
+      <span class="impact-label">Innovation</span>
+      <strong>Prototype to impact</strong>
+      <small>From field trials to startup-led solutions for rural productivity.</small>
+    </div>
+    <div class="impact-item">
+      <span class="impact-label">Leadership</span>
+      <strong>Curriculum &amp; mentorship</strong>
+      <small>Teaching, training, and guiding innovation fellows and researchers.</small>
+    </div>
+    <div class="impact-item">
+      <span class="impact-label">Impact</span>
+      <strong>Cross-sector delivery</strong>
+      <small>Academia, industry, policy, and development aligned around sustainable growth.</small>
     </div>
   </div>
 </section>
@@ -827,35 +886,35 @@
         <div class="timeline-period">Mar 2021 – Present</div>
         <div class="timeline-role">Part-Time Lecturer</div>
         <div class="timeline-org">University of Nairobi, Faculty of Engineering</div>
-        <div class="timeline-desc">Teaching irrigation engineering, smart agriculture and mechanization at undergraduate and postgraduate level. Supervising MSc and BSc research projects; contributing to curriculum development aligned with SDGs and CUE requirements. Since 2024–2026 I have extended this role to include: mentorship for C4DLab innovation fellows (industry–academia mentorship and prototyping guidance), delivery of AFRETEC teaching implementation programmes, participation in curriculum development committees, and adjunct teaching and collaboration through AICAD — reinforcing applied teaching, innovation mentorship and institutional partnership activities.</div>
+        <div class="timeline-desc">Teach irrigation, mechanization and smart-agriculture modules; supervise MSc/BSc research; lead curriculum development aligned to SDG and CUE standards. Since 2024 I have also mentored C4DLab innovation fellows, supported AFRETEC teaching implementation, contributed to curriculum committees and delivered adjunct sessions with AICAD.</div>
       </div>
       <div class="timeline-item fade-up">
         <div class="timeline-dot"></div>
         <div class="timeline-period">Aug 2023 – Oct 2024</div>
         <div class="timeline-role">Knowledge Transfer Specialist</div>
         <div class="timeline-org">AAKTP – UoN / Aston University UK / Solargen Technologies</div>
-        <div class="timeline-desc">Led technical implementation of a ~KSh 21M tri-institutional project on hybrid solar–wind powered smart irrigation systems. Achieved 58% reduction in LCOE and 71% reduction in CO₂ emissions. Trained 50+ engineers and students.</div>
+        <div class="timeline-desc">Led delivery of a ~KSh 21M tri-institutional hybrid solar–wind smart irrigation project — achieving major LCOE and CO₂ reductions and training 50+ engineers and students.</div>
       </div>
       <div class="timeline-item fade-up">
         <div class="timeline-dot"></div>
         <div class="timeline-period">Jul 2021 – Present</div>
         <div class="timeline-role">Founder &amp; Lead Engineer</div>
         <div class="timeline-org">Sisili Agritech Ltd, Kenya</div>
-        <div class="timeline-desc">Founded and lead a climate-focused agritech enterprise delivering climate-resilient mechanization and renewable-powered adaptation solutions for smallholder systems in East Africa. Host organisation for UoN Tech Skills Marketplace internships.</div>
+        <div class="timeline-desc">Founder and lead engineer at Sisili Agritech Ltd, delivering mechanization and renewable-powered adaptation solutions for smallholder farmers and hosting UoN internships.</div>
       </div>
       <div class="timeline-item fade-up">
         <div class="timeline-dot"></div>
         <div class="timeline-period">Oct 2025 – Dec 2025</div>
         <div class="timeline-role">Erasmus+ Traineeship Researcher</div>
         <div class="timeline-org">Çukurova University, Turkey</div>
-        <div class="timeline-desc">Soil–machine interaction testing, FEA-based harvester component design, prototype assembly and field testing under Prof. Dr. Tunahan Erdem. Established active ongoing research collaboration.</div>
+        <div class="timeline-desc">Conducted soil–machine interaction testing, FEA design and prototype assembly, strengthening research collaboration with Çukurova University.</div>
       </div>
       <div class="timeline-item fade-up">
         <div class="timeline-dot"></div>
         <div class="timeline-period">May 2025 – Present</div>
         <div class="timeline-role">Innovation Fellowship Mentor</div>
         <div class="timeline-org">C4DLab, University of Nairobi</div>
-        <div class="timeline-desc">Mentoring innovation fellows on technology development, prototyping, lean experimentation and commercialization. Guiding stakeholder engagement and impact-oriented innovation design.</div>
+        <div class="timeline-desc">Mentor innovation fellows in prototyping, lean experimentation and commercialisation; advise on stakeholder engagement and impact-focused design.</div>
       </div>
     </div>
     <div class="timeline">
@@ -902,30 +961,30 @@
 <section id="research" class="research-section">
   <div class="section-label">Projects &amp; Grants</div>
   <h2 class="section-title">Research &amp; <em>Innovation</em></h2>
-  <p class="section-subtitle">Applied and funded research spanning irrigation, renewable energy, mechanization and digital agriculture.</p>
+  <p class="section-subtitle">Applied, funded and collaborative research in irrigation, renewable energy, mechanization and digital agriculture.</p>
   <div class="research-cards">
     <div class="research-card fade-up stagger-2">
       <span class="rc-tag">Upcoming · Jul 2026</span>
       <div class="rc-title">ReSuS-AFRICA Renewable Energy Summer School</div>
-      <div class="rc-desc">Co-organiser at UoN for Volkswagen Foundation's fully-funded programme bringing together 25 African PhD students across six renewable energy thematic areas.</div>
+      <div class="rc-desc">Co-organiser of the Volkswagen Foundation–supported summer school, convening 25 African PhD students across renewable-energy themes.</div>
       <div class="rc-budget">Fully funded · Partners: Makerere, Jimma, CSRS Côte d'Ivoire</div>
     </div>
     <div class="research-card fade-up stagger-3">
       <span class="rc-tag">Proposed · 2025</span>
       <div class="rc-title">Smart Solar-Powered Irrigation for Kenya's ASAL Regions</div>
-      <div class="rc-desc">ESC Industrial Research Chair (PI: Dr. Nanje). PVsyst/HelioScope modelling, IoT control systems, field deployment in Isinya, Kajiado County. Designed to train 150+ students.</div>
+      <div class="rc-desc">ESC Industrial Research Chair project: PVsyst/HelioScope modelling and IoT-controlled field deployments in Isinya. Includes capacity-building for students and technicians.</div>
       <div class="rc-budget">USD 80,000 · Partner: Solargen Technologies Ltd</div>
     </div>
     <div class="research-card fade-up stagger-4">
       <span class="rc-tag">Proposed · 2025</span>
       <div class="rc-title">Smart Manufacturing, Digital Fabrication &amp; Startup Success in Kenya</div>
-      <div class="rc-desc">ESC proposal (Co-PI) evaluating critical success factors for 50 early-stage technology startups. Digital fabrication, Industry 4.0 training and entrepreneurship development.</div>
+      <div class="rc-desc">Co-PI on a proposal studying success factors for early-stage startups, with a focus on digital fabrication and entrepreneurship training.</div>
       <div class="rc-budget">USD 50,000 grant + USD 100,000 in-kind · Partner: Gearbox GPAN</div>
     </div>
     <div class="research-card fade-up stagger-1">
       <span class="rc-tag">Completed · 2023–2024</span>
       <div class="rc-title">Hybrid Solar–Wind Smart Irrigation System for Smallholder Farmers</div>
-      <div class="rc-desc">Tri-institutional AAKTP project with Aston University (UK) and Solargen Technologies. 58% LCOE reduction, 71% CO₂ reduction vs diesel. MPC-based smart irrigation with IoT sensors deployed.</div>
+      <div class="rc-desc">Tri-institutional AAKTP project with Aston University (UK) and Solargen Technologies. Delivered MPC-based smart irrigation with IoT sensing, and strong LCOE and emissions reductions in field trials.</div>
       <div class="rc-budget">~KSh 21 million · UoN, Aston UK, Solargen Kenya</div>
     </div>
     <div class="research-card fade-up stagger-1">
@@ -947,7 +1006,7 @@
 <section id="publications" class="publications-section">
   <div class="section-label">Scholarly Output</div>
   <h2 class="section-title">Selected <em>Publications</em></h2>
-  <p class="section-subtitle">Peer-reviewed journal articles, conference papers, symposium contributions and preprints (2024–2026).</p>
+  <p class="section-subtitle">Selected peer-reviewed and conference outputs (2024–2026).</p>
   <div class="pub-tabs">
     <button class="pub-tab active" onclick="filterPubs('all', this)">All</button>
     <button class="pub-tab" onclick="filterPubs('journal', this)">Journal Articles</button>
